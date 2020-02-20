@@ -5,13 +5,31 @@
     <title> L-mice </title>
   </head>
 
-  <body>
-    <div role="banner" style="width: 100vw; background: #333333">
-      <img src="https://avatars0.githubusercontent.com/u/51999502?s=96&v=4" style="width:4vh"></img>
-      <h1> L-mice </h1>
+  <body style="margin:0">
+    <style>
+      .Header, .Header-item {
+        height:15vh;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+      }
+      
+      .Header {
+        z-index: 32;
+        padding: 16px;
+        font-size: 14px;
+        line-height: 1.5;
+        color: hsla(0,0%,100%,.7);
+        background-color: #24292e;
+      }
+    </style>
+    
+    <div role="banner" class="Header">
+      <img src="https://avatars0.githubusercontent.com/u/51999502?s=96&amp;v=4" style="height:10vh">
+      <h1 style="height: 4vh; color:white"> L-mice </h1>
     </div>
     
-    <div>
+    <div style="margin:0 20vw; align-items: center; height:85vh; background: #888888">
       <h> Preparing... </h>
     </div>
     
