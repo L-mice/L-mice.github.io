@@ -15,7 +15,7 @@ function importScript(dir){
 }
 
 function importCss(dir){
-  let a = document.createElement("link);
+  let a = document.createElement("link");
   a.rel = "stylesheet";
   a.href = dir;
   document.body.appendChild(a);
