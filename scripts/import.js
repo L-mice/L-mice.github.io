@@ -4,6 +4,7 @@ let preloads = [
 
 (function(){
   for(let i = 0; i < preloads.length; i++){
+    console.log("Loading " + preloads[i]) + "....";
     importScript(preloads[i]);
   }
 })();
@@ -11,7 +12,7 @@ let preloads = [
 function importScript(dir){
   let a = document.createElement("script");
   a.src = dir;
-  document.getElementsByTagName("body")[0].appendChild(a);
+  document.body.appendChild(a);
 }
 
 function importCss(dir){
