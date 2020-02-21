@@ -4,7 +4,7 @@ let preloads = [
 
 (function(){
   for(let i = 0; i < preloads.length; i++){
-    console.log("Loading " + preloads[i]) + "....";
+    console.log("Loading " + preloads[i] + "....");
     importScript(preloads[i]);
   }
 })();
