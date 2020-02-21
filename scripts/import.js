@@ -11,7 +11,7 @@ let preloads = [
 function importScript(dir){
   let a = document.createElement("script");
   a.src = dir;
-  document.getElementByTagName("body")[0].appendChild(a);
+  document.getElementsByTagName("body")[0].appendChild(a);
 }
 
 function importCss(dir){
