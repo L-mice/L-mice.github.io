@@ -1,3 +1,4 @@
+console.log("html.js loaded");
 initialSetting();
 
 function initialSetting(){
