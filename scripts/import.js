@@ -1,5 +1,5 @@
 let preloads = [
-  "html.js",
+  "/scripts/html.js",
 ];
 
 (function(){
