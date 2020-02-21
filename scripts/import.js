@@ -1,5 +1,5 @@
 let preloads = [
-  "/scripts/html.js",
+  "html.js",
 ];
 
 (function(){
@@ -11,13 +11,13 @@ let preloads = [
 
 function importScript(dir){
   let a = document.createElement("script");
-  a.src = dir;
+  a.src = "/scripts/" + dir;
   document.body.appendChild(a);
 }
 
 function importCss(dir){
   let a = document.createElement("link");
   a.rel = "stylesheet";
-  a.href = dir;
+  a.href = "/stylesheets/" + dir;
   document.body.appendChild(a);
 }
