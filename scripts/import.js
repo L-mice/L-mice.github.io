@@ -1,4 +1,6 @@
-let preloads = [];
+let preloads = [
+  "html.js",
+];
 
 (function(){
   for(let i = 0; i < preloads.length; i++){
