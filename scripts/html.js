@@ -18,3 +18,7 @@ function initialSetting(){
   document.head.appendChild(unicode);
   document.head.appendChild(viewport);
 }
+
+function setTitle(title){
+  document.title = title;
+}

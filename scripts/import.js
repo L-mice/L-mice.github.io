@@ -1,5 +1,6 @@
 let preloads = [
   "html.js",
+  "header.js",
 ];
 
 (function(){
