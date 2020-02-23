@@ -17,8 +17,10 @@ function initialSetting(){
   
   document.head.appendChild(unicode);
   document.head.appendChild(viewport);
+
+  console.log("initialSetting done.");
 }
 
-function setTitle(title){
+setTitle = function(title){
   document.title = title;
 }
