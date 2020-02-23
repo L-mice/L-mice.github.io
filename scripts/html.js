@@ -1,4 +1,3 @@
-console.log("html.js loaded");
 initialSetting();
 
 function initialSetting(){
@@ -24,3 +23,5 @@ function initialSetting(){
 setTitle = function(title){
   document.title = title;
 }
+
+console.log("html.js loaded");

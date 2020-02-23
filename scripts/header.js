@@ -30,3 +30,4 @@ function makeHeader(){
 }
 
 makeHeader();
+console.log("header.js loaded.");
