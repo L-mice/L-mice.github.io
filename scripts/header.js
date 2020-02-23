@@ -26,7 +26,7 @@ function makeHeader(){
     header.appendChild(icon);
     header.appendChild(titleBar);
 
-    document.body.insertBefore(header);
+    document.body.insertBefore(header,document.body.children[0]);
 }
 
 makeHeader();
