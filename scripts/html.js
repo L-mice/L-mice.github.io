@@ -1,5 +1,3 @@
-initialSetting();
-
 function initialSetting(){
   let unicode = document.createElement("meta");
   unicode.charset = "utf-8";
@@ -17,11 +15,14 @@ function initialSetting(){
   document.head.appendChild(unicode);
   document.head.appendChild(viewport);
 
+  setTitle(PAGE_TITLE);
+
   console.log("initialSetting done.");
 }
 
-setTitle = function(title){
+function setTitle(title){
   document.title = title;
 }
 
+initialSetting();
 console.log("html.js loaded");
