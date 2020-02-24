@@ -1,4 +1,4 @@
-const HEADER_ICON = "https://avatars1.githubusercontent.com/u/61101436?s=400&u=39b1e1897dde613706bf64d19268829c050292b7&v=4";
+const HEADER_ICON = FAVICON_DIR;
 const HEADER_CSS = "header.css";
 
 const HEADER_CLASSES = {

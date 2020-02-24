@@ -6,13 +6,13 @@ let preloads = [
 (function(){
   for(let i = 0; i < preloads.length; i++){
     console.log("Loading " + preloads[i] + "....");
-    importScript(preloads[i]);
+    importScript("/scripts/" + preloads[i]);
   }
 })();
 
 function importScript(dir){
   let a = document.createElement("script");
-  a.src = "/scripts/" + dir;
+  a.src = dir;
   document.getElementsByName("importScripts")[0].insertAdjacentElement("afterend", a);
 }
 
