@@ -13,7 +13,7 @@ let preloads = [
 function importScript(dir){
   let a = document.createElement("script");
   a.src = "/scripts/" + dir;
-  document.body.getElementsByName("importScripts")[0].insertAdjacentElement("afterend", a);
+  document.getElementsByName("importScripts")[0].insertAdjacentElement("afterend", a);
 }
 
 function importCss(dir){
