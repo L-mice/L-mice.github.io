@@ -1,3 +1,5 @@
+const FAVICON_DIR = "/L-mice.png";
+
 function initialSetting(){
   let unicode = document.createElement("meta");
   unicode.charset = "utf-8";
@@ -15,7 +17,12 @@ function initialSetting(){
   document.head.appendChild(unicode);
   document.head.appendChild(viewport);
 
-  setTitle(PAGE_TITLE);
+  let favicon = document.createElement("link");
+  favicon.rel = "icon";
+  favicon.type = "img/png";
+  favicon.href = FAVICON_DIR;
+
+  document.head.appendChild(favicon);
 
   console.log("initialSetting done.");
 }
