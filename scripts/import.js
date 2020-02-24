@@ -6,7 +6,8 @@ let preloads = [
 (function(){
   for(let i = 0; i < preloads.length; i++){
     console.log("Loading " + preloads[i] + "....");
-    importScript("/scripts/" + preloads[i]);
+    if(preloads[i].indexOf("/") == -1) importScript("/scripts/" + preloads[i]);
+    else importScript(preloads[i]);
   }
 })();
 
