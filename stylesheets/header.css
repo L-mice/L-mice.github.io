@@ -3,15 +3,14 @@
     background: #24292e;
     width: 100vw;
     height: 6vh;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
 }
 
 .icon{
     height:4vh;
+    margin: 1vh
 }
 
 .titleBar{
-    height:4vh;
+    height:6vh;
     color: #FFFFFF;
 }
