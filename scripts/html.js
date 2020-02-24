@@ -33,4 +33,4 @@ const HTML = {
 };
 
 HTML.initialSetting();
-export const HTML = HTML;
+export default HTML;

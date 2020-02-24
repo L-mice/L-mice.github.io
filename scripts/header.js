@@ -38,4 +38,4 @@ const HEADER = {
 
 console.log("header.js loaded.");
 
-export const Header = Header;
+export default Header;
