@@ -1,7 +1,10 @@
 .headerBack{
+    display: block;
     background: #24292e;
     width: 100vw;
-    height: 5vh;
+    height: 8vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
 .icon{
