@@ -3,6 +3,7 @@
     background: #24292e;
     width: 100vw;
     height: 6vh;
+    align-items: center;
 }
 
 .icon{
@@ -13,4 +14,5 @@
 .titleBar{
     height:6vh;
     color: #FFFFFF;
+    font-size: 4vh;
 }

@@ -2,3 +2,20 @@ body{
     margin: 0;
 }
 
+.back{
+    width: 100vw;
+    min-height: 94vh;
+    background: #bbbbbb;
+}
+
+.sidebar{
+    min-width: 0;
+    max-width: 20vw;
+}
+
+.contents{
+    max-width: 60vw;
+    width: 60vw;
+    background: #888888;
+    align-items: center;
+}
