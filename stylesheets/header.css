@@ -1,0 +1,14 @@
+.headerBack{
+    background: #24292e;
+    width: 100vw;
+    height: 5vh;
+}
+
+.icon{
+    height:4vh;
+}
+
+.titleBar{
+    height:4vh;
+    color: #FFFFFF
+}

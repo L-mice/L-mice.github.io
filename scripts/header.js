@@ -12,6 +12,7 @@ importCss(HEADER_CSS);
 function makeHeader(){
     let header = document.createElement("div");
     header.role = "banner";
+    header.classList.add(HEADER_CLASSES.back);
 
     let icon = document.createElement("img");
     icon.src = HEADER_ICON;
@@ -22,6 +23,7 @@ function makeHeader(){
 
     let titleBar = document.createElement("p");
     titleBar.innerHTML = document.title;
+    titleBar.classList.add(HEADER_CLASSES.title);
 
     header.appendChild(icon);
     header.appendChild(titleBar);
