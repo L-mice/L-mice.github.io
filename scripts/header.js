@@ -32,5 +32,5 @@ const Header = {
     }
 };
 
-
+Header.set();
 console.log("header.js loaded.");
