@@ -6,6 +6,10 @@
     align-items: center;
 }
 
+.split-header{
+    width: 50vw;
+}
+
 .icon{
     height:4vh;
     margin: 1vh
@@ -14,5 +18,7 @@
 .titleBar{
     height:6vh;
     color: #FFFFFF;
-    font-size: 4vh;
+    margin:0;
+    padding-top: 1vh;
+    font-size: calc(16px + 1vh);
 }

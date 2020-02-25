@@ -5,6 +5,7 @@ const Information = {
 
 const HTML = {
   FAVICON_DIR: "/L-mice.png",
+  LOGO_DIR: "/L-mice_logo.png",
   
   CHARSET: "utf-8",
 
