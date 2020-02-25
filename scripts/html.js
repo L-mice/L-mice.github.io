@@ -32,7 +32,7 @@ const HTML = {
   
     document.head.appendChild(favicon);
   
-    if(SUBTITLE != null) 
+    if(SUBTITLE != null) this.setSubTitle(SUBTITLE);
 
     console.log("initialSetting done.");
   },
