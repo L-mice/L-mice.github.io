@@ -45,3 +45,4 @@ const HTML = {
 };
 
 HTML.initialSetting();
+console.log("html.js loaded.");
