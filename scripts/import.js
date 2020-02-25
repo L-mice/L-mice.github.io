@@ -1,3 +1,8 @@
+const preloads = [
+  "/scripts/html.js",
+  "/scripts/header.js",
+];
+
 function importScript(dir){
   let a = document.createElement("script");
   a.src = dir;
@@ -11,5 +16,17 @@ function importCss(dir){
   document.body.appendChild(a);
 }
 
-export {importScript};
-export {importCss};
+
+(function(){
+  let k = 0;
+
+  let f = function(){
+    if(k < preloads.length){
+      importScript(preloads[k]);
+
+      k++;
+      setTimeout(f, 500);
+    }
+  };
+  f();
+})();

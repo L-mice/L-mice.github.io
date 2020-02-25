@@ -1,9 +1,16 @@
+const Information = {
+  PAGE_NAME: "L-mice",
+};
+
+
 const HTML = {
   FAVICON_DIR: "/L-mice.png",
+  
+  CHARSET: "utf-8",
 
   initialSetting: function(){
     let unicode = document.createElement("meta");
-    unicode.charset = "utf-8";
+    unicode.charset = HTML.CHARSET;
     
     let viewport = document.createElement("meta");
     viewport.name = "viewport";
@@ -25,12 +32,16 @@ const HTML = {
   
     document.head.appendChild(favicon);
   
+    if(SUBTITLE != null) 
+
     console.log("initialSetting done.");
   },
   setTitle: function(text){
     document.title = text;
   },
+  setSubTitle: function(subtitle){
+    HTML.setTitle(Information.PAGE_NAME + " | " + subtitle);
+  },
 };
 
 HTML.initialSetting();
-export default HTML;
