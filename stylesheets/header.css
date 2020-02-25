@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 .headerBack{
     display: flex;
     background: #24292e;
