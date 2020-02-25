@@ -7,7 +7,10 @@
 }
 
 .split-header{
-    width: 50vw;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
 }
 
 .icon{
