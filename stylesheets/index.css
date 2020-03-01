@@ -1,20 +1,8 @@
-@media only screen and (max-width: 600px){
-    .sidebar{
-        width: 0;
-        max-width: 0;
-        display:none;
-    }
-
-    .contents{
-        width: 100vw;
-    }
-}
-
 .back{
     display: flex;
     width: 100vw;
     min-height: 94vh;
-    background: #bbbbbb;
+    background: image("../images/background.jpg");
 }
 
 .sidebar{
@@ -29,4 +17,14 @@
     width: 60vw;
     background: #44444488;
     align-items: center;
+}
+
+@media only screen and (max-width: 600px){
+    .sidebar{
+        display:none;
+    }
+
+    .contents{
+        width: 100vw;
+    }
 }
