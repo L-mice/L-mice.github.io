@@ -1,8 +1,12 @@
+body {
+    background: image();
+}
+
 .back{
     display: flex;
     width: 100vw;
     min-height: 94vh;
-    background: image("../images/background.jpg");
+    background: #bbbbbb;
 }
 
 .sidebar{
