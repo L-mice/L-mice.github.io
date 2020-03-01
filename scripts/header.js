@@ -8,13 +8,19 @@ const Header = {
         title: "titleBar",
     },
 
-    set: function(){
-        let header = document.createElement("div");
-        header.role = "banner";
-        header.classList.add(Header.CLASS_NAME.back);
+    item:{
+        header: null,
+        leftside: null,
+        rightside: null,
+    },
 
-        let header_left = document.createElement("div");
-        header_left.classList.add("split-header");
+    set: function(){
+        Header.item.header = document.createElement("div");
+        Header.item.header.role = "banner";
+        Header.item.header.classList.add(Header.CLASS_NAME.back);
+
+        Header.item.leftside = document.createElement("div");
+        Header.item.leftside.classList.add("split-header");
 
     
         let icon = document.createElement("img");
@@ -28,18 +34,18 @@ const Header = {
         titleBar.innerHTML = SUBTITLE;
         titleBar.classList.add(Header.CLASS_NAME.title);
     
-        header_left.appendChild(icon);
-        header_left.appendChild(titleBar);
+        Header.item.leftside.appendChild(icon);
+        Header.item.leftside.appendChild(titleBar);
 
         
-        let header_right = document.createElement("div");
-        header_right.classList.add("split-header");
+        Header.item.rightside = document.createElement("div");
+        Header.item.rightside.classList.add("split-header");
 
 
-        header.appendChild(header_left);
-        header.appendChild(header_right);
+        Header.item.header.appendChild(Header.item.leftside);
+        Header.item.header.appendChild(Header.item.rightside);
     
-        document.body.insertBefore(header,document.body.children[0]);
+        document.body.insertBefore(Header.item.header,document.body.children[0]);
         importCss(Header.CSS_DIR);
     }
 };
