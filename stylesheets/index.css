@@ -1,6 +1,12 @@
 @media only screen and (max-width: 600px){
     .sidebar{
         width: 0;
+        max-width: 0;
+        display:none;
+    }
+
+    .contents{
+        width: 100vw;
     }
 }
 
