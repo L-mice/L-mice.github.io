@@ -43,5 +43,5 @@ function makeMenuItem(obj){
 
 function resetMenu(){
     let back = document.getElementById(Menu_id);
-    back.children.length = 0;
+    back.innerHTML = "";
 }
