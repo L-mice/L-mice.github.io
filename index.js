@@ -4,39 +4,44 @@ const INDEX_CSS = "index.css";
 const Menu_id = "items_back";
 const Menu_items = [
     {
+        title: "Show",
+        activity: function(){
+            resetMenu();
+            for(let k = 1, back = document.getElementById(Menu_id); k < Menu_items.length; k++){
+                let item = makeMenuItem(Menu_items[k]);
+                
+                setTimeout(function(){
+                    back.appendChild(item);
+                },50);
+            }
+        },
+    },
+    {
         title: "close",
         activity: function(){
-            document.getElementById("items_back").style.display = "none";
-        },
-    },
-    {
-        title: "alert",
-        activity: function(){
-            alert(SUBTITLE);
-        },
-    },
-    {
-        title: "articles",
-        activity: function(){
-            location.href = "/articles/top.html";
-        },
-    },
-    {
-        title: "Top",
-        activity: function(){
-            location.href = "/index.html";
+            resetMenu();
+            
+            let item = makeMenuItem(Menu_items[0]);
+            item.style.width = "100vw";
+
+            document.getElementById(Menu_id).appendChild(item);
         },
     },
 ];
 
 importCss(INDEX_CSS);
+Menu_items[1].activity();
 
-
-for(let k = 0, back = document.getElementById(Menu_id); k < Menu_items.length; k++){
+function makeMenuItem(obj){
     let item = document.createElement("button");
-    item.innerHTML = Menu_items[k].title;
-    item.onclick = Menu_items[k].activity;
+    item.innerHTML = obj.title;
+    item.onclick = obj.activity;
     item.classList.add("menuItem");
 
-    back.appendChild(item);
+    return item;
+}
+
+function resetMenu(){
+    let back = document.getElementById(Menu_id);
+    back.children.length = 0;
 }
