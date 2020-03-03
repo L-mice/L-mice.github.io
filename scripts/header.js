@@ -47,7 +47,11 @@ const Header = {
     
         document.body.insertBefore(Header.item.header,document.body.children[0]);
         importCss(Header.CSS_DIR);
-    }
+    },
+
+    setVisiblity: function(bool){
+        Header.item.header.style.visiblity = bool;
+    },
 };
 
 Header.set();
