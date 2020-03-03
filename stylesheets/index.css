@@ -17,7 +17,7 @@ body {
     color: #FFFFFF;
     text-align: center;
     border-radius: 1vh;
-    border: 1px ridge #FFFFFF;
+    border: 1px solid #FFFFFF;
 }
 
 .menuItem :hover{
