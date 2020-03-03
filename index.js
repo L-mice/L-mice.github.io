@@ -33,8 +33,7 @@ importCss(INDEX_CSS);
 
 
 for(let k = 0, back = document.getElementById(Menu_id); k < Menu_items.length; k++){
-    let item = document.createElement("a");
-    //item.type = "button";
+    let item = document.createElement("button");
     item.innerHTML = Menu_items[k].title;
     item.onclick = Menu_items[k].activity;
     item.classList.add("menuItem");
