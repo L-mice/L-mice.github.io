@@ -4,7 +4,7 @@ const INDEX_CSS = "index.css";
 const Menu_id = "items_back";
 const Menu_items = [
     {
-        title: "Show",
+        title: "≡",
         activity: function(){
             resetMenu();
             for(let k = 1, back = document.getElementById(Menu_id); k < Menu_items.length; k++){
@@ -23,6 +23,7 @@ const Menu_items = [
             
             let item = makeMenuItem(Menu_items[0]);
             item.style.width = "100vw";
+            item.style.height = "4vh";
 
             document.getElementById(Menu_id).appendChild(item);
         },
