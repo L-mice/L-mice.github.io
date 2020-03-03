@@ -6,7 +6,7 @@ const Menu_items = [
     {
         title: "close",
         activity: function(){
-            document.body.getElementById("items_back").style.display = "none";
+            document.getElementById("items_back").style.display = "none";
         },
     },
     {
