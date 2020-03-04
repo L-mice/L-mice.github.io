@@ -5,6 +5,11 @@ body {
     background-repeat: no-repeat;
 }
 
+.back{
+    width: 100vw;
+    height: 95vh;
+}
+
 .sidebar{
     width: 20vw;
     height: 100%;
