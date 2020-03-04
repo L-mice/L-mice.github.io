@@ -32,7 +32,7 @@ const Header = {
         icon.classList.add(Header.CLASS_NAME.icon);
     
         let titleBar = document.createElement("p");
-        titleBar.innerHTML = SUBTITLE;
+        titleBar.innerHTML = SUBTITLE || "";
         titleBar.classList.add(Header.CLASS_NAME.title);
     
         Header.item.leftside.appendChild(icon);
@@ -44,7 +44,7 @@ const Header = {
 
         
         let aboutBtn = makeBasicButton("About", function(){
-            location.href = "/articles/about.html";
+            location.href = "/articles/about";
         }).addClass(Header.CLASS_NAME.header_btn);
 
         let aBtn = makeBasicButton("A", function(){
