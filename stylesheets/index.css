@@ -1,6 +1,6 @@
 body {
-    /*background: url("/images/background.jpg");*/
-    background: #666666;
+    background: url("/images/background_1.jpg");
+    /*background: #666666;*/
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -8,6 +8,7 @@ body {
 .back{
     width: 100vw;
     height: 95vh;
+    display:flex;
 }
 
 .sidebar{
