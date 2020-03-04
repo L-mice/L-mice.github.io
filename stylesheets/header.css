@@ -13,7 +13,7 @@ body{
 .headerBtn{
     width: 14vw;
     height: 6vh;
-    padding-left: 2vw;
+    margin-left: 2vw;
     text-align: center;
     background: #FFFFFF00;
     color: #FFFFFF;
