@@ -16,6 +16,12 @@ body{
     text-align: center;
     background: #FFFFFF00;
     color: #FFFFFF;
+    border: 0;
+    border-radius: 1vh;
+}
+
+.headerBtn:hover{
+    background: #22FF8844;
 }
 
 .split-header{
