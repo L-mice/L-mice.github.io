@@ -5,28 +5,23 @@ body {
     background-repeat: no-repeat;
 }
 
-.back{
-    display: inline-block;
-    width: 100vw;
-    min-height: 94vh;
+.sidebar{
+    width: 20vw;
+    height: 100%;
 }
 
-.menuItem{
-    background: #00000000;
-    width: calc((1/3) * 100vw);
-    height : 8vh;
-    color: #FFFFFF;
-    text-align: center;
-    border-radius: 2vh;
-    border: 0px;
-}
-
-.menuItem:hover{
-    background: #00FF8822;
+.contents{
+    width: 60vw;
+    height: 100%;
+    background: #FFFFFFAA;
 }
 
 @media only screen and (max-width: 600px){
-    .menuItem{
+    .sidebar{
+        width: 0;
+    }
+
+    .contents{
         width: 100vw;
     }
 }
