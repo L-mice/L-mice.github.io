@@ -1,5 +1,6 @@
 const preloads = [
   "/scripts/html.js",
+  "/scripts/button.js",
   "/scripts/header.js",
 ];
 

@@ -10,6 +10,12 @@ body{
     align-items: center;
 }
 
+.headerBtn{
+    width: 10vw;
+    height: 6vw;
+    text-align: center;
+}
+
 .split-header{
     display: flex;
     width: 50%;
