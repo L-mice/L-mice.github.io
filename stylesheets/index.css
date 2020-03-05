@@ -20,6 +20,8 @@ body {
     width: 60vw;
     height: 100%;
     background: #FFFFFF88;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 @media only screen and (max-width: 600px){
