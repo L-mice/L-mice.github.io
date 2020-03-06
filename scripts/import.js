@@ -10,10 +10,14 @@ function importScript(dir){
   document.body.appendChild(a);
 }
 
-function importCss(dir){
+function importCss(cssName){
+  importCssFreeDir("/stylesheets/" + cssName);
+}
+
+function inportCssFreeDir(dir){
   let a = document.createElement("link");
   a.rel = "stylesheet";
-  a.href = "/stylesheets/" + dir;
+  a.href = dir;
   document.body.appendChild(a);
 }
 

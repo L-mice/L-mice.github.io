@@ -47,15 +47,15 @@ const Header = {
             location.href = "/articles/about";
         }).addClass(Header.CLASS_NAME.header_btn);
 
-        let aBtn = makeBasicButton("A", function(){
-            alert("A Button");
+        let toolBtn = makeBasicButton("Tools", function(){
+            alert("Useful Tools");
         }).addClass(Header.CLASS_NAME.header_btn);
 
         let bBtn = makeBasicButton("B", function(){
             alert("B Button");
         }).addClass(Header.CLASS_NAME.header_btn);
 
-        Header.item.rightside.appendChild(aBtn);
+        Header.item.rightside.appendChild(toolBtn);
         Header.item.rightside.appendChild(bBtn);
         Header.item.rightside.appendChild(aboutBtn);
 
