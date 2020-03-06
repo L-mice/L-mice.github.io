@@ -67,7 +67,7 @@ const Header = {
     },
 
     setVisiblity: function(bool){
-        Header.item.header.style.visiblity = bool;
+        //Header.item.header.style.visiblity = bool;
     },
 };
 

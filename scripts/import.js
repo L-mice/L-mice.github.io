@@ -14,7 +14,7 @@ function importCss(cssName){
   importCssFreeDir("/stylesheets/" + cssName);
 }
 
-function inportCssFreeDir(dir){
+function importCssFreeDir(dir){
   let a = document.createElement("link");
   a.rel = "stylesheet";
   a.href = dir;
