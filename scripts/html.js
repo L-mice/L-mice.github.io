@@ -37,8 +37,18 @@ const HTML = {
 
 
     {
-      let googleTag = "<!-- Global site tag (gtag.js) - Google Analytics -->"+"<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-159818199-1\"></script>"+"<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date()); gtag('config', 'UA-159818199-1');</script>";
-      document.head.innerHTML += googleTag;
+      let googleTag = [
+        "<!-- Global site tag (gtag.js) - Google Analytics -->",
+        "<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-159818199-1\"></script>",
+        "<script>",
+        "window.dataLayer = window.dataLayer || [];",
+        "function gtag(){dataLayer.push(arguments);}",
+        "gtag('js', new Date());",
+        "gtag('config', 'UA-159818199-1');",
+        "</script>"
+      ].join("\n");
+      
+      document.body.innerHTML += googleTag;
     }
 
     console.log("initialSetting done.");
