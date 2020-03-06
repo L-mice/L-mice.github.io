@@ -35,6 +35,12 @@ const HTML = {
   
     if(SUBTITLE != null) this.setSubTitle(SUBTITLE);
 
+
+    {
+      let googleTag = "<!-- Global site tag (gtag.js) - Google Analytics -->"+"<script async src=\"https://www.googletagmanager.com/gtag/js?id=UA-159818199-1\"></script>"+"<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date()); gtag('config', 'UA-159818199-1');</script>";
+      document.head.innerHTML += googleTag;
+    }
+
     console.log("initialSetting done.");
   },
   setTitle: function(text){
