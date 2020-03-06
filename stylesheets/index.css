@@ -1,8 +1,9 @@
 body {
     background: #666666;
-    background: url("/images/background_1.jpg");
+    background: url("/images/pink_cat.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-repeat: repeat-y;
 }
 
 .back{
