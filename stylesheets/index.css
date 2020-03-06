@@ -15,7 +15,6 @@ body {
 .sidebar{
     width: 20vw;
     height: 100%;
-    display: block;
 }
 
 .contents{
@@ -23,7 +22,8 @@ body {
     height: 100%;
     background: #FFFFFF88;
     padding-left: 4px;
-    padding-right: 4px;
+    padding-right: 4px;   
+    display: block;
 }
 
 @media only screen and (max-width: 600px){
