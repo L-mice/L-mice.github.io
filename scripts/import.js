@@ -1,8 +1,8 @@
 const preloads = [
-  "unique.js",
   "/scripts/html.js",
   "/scripts/button.js",
   "/scripts/header.js",
+  "unique.js",
 ];
 
 function importScript(dir){
