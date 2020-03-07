@@ -1,29 +1,38 @@
 .listItem{
-    width: 95%;
-    height: 10vh;
-    display: block;
+    width: 90%;
+    height: fit-content;
+    display: flex;
     text-align: left;
-    background: #44FFAACC;
-    border-radius: 5vh;
+    background: #44FFAA44;
+    border-radius: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+    padding: 4px;
 }
 
-.listItem:hover{
-    height: auto;
-}
 
 .listTitle{
     width: 100%;
-    height: 10vh;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
     background: #FFFFFF00;
+    font-size: calc(1vh + 10px);
+    font-family: serif;
 }
 
 .goButton{
-    width: 25%;
-    height: 10vh;
-    margin-left: 75%;
+    width: 100%;
+    height: auto;
+    margin-left: 50%;
     background: #FFFFFF00;
+    border-radius: 10vh;
     border: 0;
     text-align: center;
+    font-size: calc(1vh + 6px);
+    font-family: serif;
 }
 
 .goButton:hover{
