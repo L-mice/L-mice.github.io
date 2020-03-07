@@ -4,7 +4,7 @@
     display: block;
     text-align: left;
     background: #44FFAACC;
-    border-radius: 25%;
+    border-radius: 5vh;
 }
 
 .listItem:hover{
@@ -22,6 +22,7 @@
     height: 10vh;
     margin-left: 75%;
     background: #FFFFFF00;
+    border: 0;
     text-align: center;
 }
 
