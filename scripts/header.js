@@ -49,14 +49,16 @@ const Header = {
 
         let toolBtn = makeBasicButton("Tools", function(){
             alert("Useful Tools");
+            location.href = "/articles/tools";
         }).addClass(Header.CLASS_NAME.header_btn);
 
-        let bBtn = makeBasicButton("B", function(){
-            alert("B Button");
+        let articlesBtn = makeBasicButton("Articles", function(){
+            alert("Articles Button");
+            location.href = "/articles";
         }).addClass(Header.CLASS_NAME.header_btn);
 
+        Header.item.rightside.appendChild(articlesBtn);
         Header.item.rightside.appendChild(toolBtn);
-        Header.item.rightside.appendChild(bBtn);
         Header.item.rightside.appendChild(aboutBtn);
 
         Header.item.header.appendChild(Header.item.leftside);
@@ -67,7 +69,7 @@ const Header = {
     },
 
     setVisiblity: function(bool){
-        //Header.item.header.style.visiblity = bool;
+        
     },
 };
 

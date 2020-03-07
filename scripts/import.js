@@ -2,6 +2,7 @@ const preloads = [
   "/scripts/html.js",
   "/scripts/button.js",
   "/scripts/header.js",
+  "unique.js",
 ];
 
 function importScript(dir){
@@ -34,4 +35,6 @@ function importCssFreeDir(dir){
     }
   };
   f();
+
+  importCssFreeDir("unique.css");
 })();
