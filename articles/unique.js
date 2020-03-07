@@ -13,7 +13,7 @@ const articleList = [
     },
     {
         title: "Articles",
-        dir: "",
+        dir: "/articles",
     },
     {
         title: "Members",
