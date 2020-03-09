@@ -21,6 +21,13 @@ const articleList = [
     },
 ];
 
+(function(){
+    let btn = Header.item.rightside.children[0];
+    let letters = btn.innerHTML.split("");
+
+    letters[0] = "<span class=\"highlight\">" + letters[0] + "</span>";
+    btn.innerHTML = letters.join("");
+})();
 
 (function(){
     for(let k = 0, base = document.getElementsByClassName("contents")[0]; k < articleList.length; k++){

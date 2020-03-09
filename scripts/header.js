@@ -36,7 +36,7 @@ const Header = {
         titleBar.classList.add(Header.CLASS_NAME.title);
     
         Header.item.leftside.appendChild(icon);
-        Header.item.leftside.appendChild(titleBar);
+        //Header.item.leftside.appendChild(titleBar);
 
         
         Header.item.rightside = document.createElement("div");
