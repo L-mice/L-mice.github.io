@@ -35,6 +35,4 @@ function importCssFreeDir(dir){
     }
   };
   f();
-
-  importCssFreeDir("unique.css");
 })();

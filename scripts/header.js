@@ -65,7 +65,6 @@ const Header = {
         Header.item.header.appendChild(Header.item.rightside);
     
         document.body.insertBefore(Header.item.header,document.body.children[0]);
-        importCss(Header.CSS_DIR);
     },
 
     setVisiblity: function(bool){
