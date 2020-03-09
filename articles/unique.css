@@ -30,3 +30,13 @@
 .cover:hover{
     background: #FF5BBD44;
 }
+
+@media only screen and (max-width: 600px){
+    .item_back{
+        width: calc(100vw * 0.9);
+    }
+
+    .cover{
+        width: calc(100vw * 0.9);
+    }
+}
