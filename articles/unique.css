@@ -1,7 +1,7 @@
 .item_back{
     width: calc(60vw * 0.9);
     height: 8vh;
-    margin: 4px 0;
+    margin: 4px auto;
     display:flex;
     background: #00000000;
     border: 1px solid #000000;
