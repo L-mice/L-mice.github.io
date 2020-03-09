@@ -29,11 +29,11 @@ const articleList = [
     btn.innerHTML = letters.join("");
 })();
 
-(function(){
+/*(function(){
     for(let k = 0, base = document.getElementsByClassName("contents")[0]; k < articleList.length; k++){
         base.appendChild(makeItem(articleList[k].title, articleList[k].dir));
     }
-})();
+})();*/
 
 function makeItem(text, dir){
     let itemBack = document.createElement("div");
