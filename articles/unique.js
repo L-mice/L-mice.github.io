@@ -29,30 +29,33 @@ const articleList = [
     btn.innerHTML = letters.join("");
 })();
 
-/*(function(){
+(function(){
     for(let k = 0, base = document.getElementsByClassName("contents")[0]; k < articleList.length; k++){
         base.appendChild(makeItem(articleList[k].title, articleList[k].dir));
     }
-})();*/
+})();
 
 function makeItem(text, dir){
     let itemBack = document.createElement("div");
-    itemBack.classList.add("listItem");
+    itemBack.classList.add("item_back");
+
+    let thumb = document.createElement("img");
+    thumb.src = "/images/neko_thumbnail.png";
+    thumb.classList.add("itemThumbnail");
 
     let title = document.createElement("p");
     title.innerHTML = text;
-    title.classList.add("listTitle");
+    title.classList.add("itemTitle");
 
-    let btn = document.createElement("button");
-    btn.innerHTML = "See this";
+    let cover = document.createElement("div");
     btn.onclick = function(){
-        window.open(dir);
+        location.href = dir;
     }
-    btn.classList.add("goButton");
+    btn.classList.add("cover");
 
-
+    itemBack.appendChild(thumb);
     itemBack.appendChild(title);
-    itemBack.appendChild(btn);
+    itemBack.appendChild(cover);
 
     return itemBack;
 }

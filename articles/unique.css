@@ -3,7 +3,7 @@
     height: 8vh;
     margin: 4px 0;
     display:flex;
-    background: #00000022;
+    background: #00000000;
     border: 1px solid #000000;
 }
 
@@ -25,4 +25,8 @@
     width: calc(60vw * 0.9);
     height: 8vh;
     background: #00000000;
+}
+
+.cover:hover{
+    background: #FF5BBD44;
 }
