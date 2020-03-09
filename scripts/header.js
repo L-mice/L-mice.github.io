@@ -32,9 +32,7 @@ const Header = {
         icon.classList.add(Header.CLASS_NAME.icon);
     
         let titleBar = document.createElement("p");
-        if(SUBTITLE instanceof String){
-            titleBar.innerHTML = SUBTITLE;
-        }
+        titleBar.innerHTML = SUBTITLE;
         titleBar.classList.add(Header.CLASS_NAME.title);
     
         Header.item.leftside.appendChild(icon);
