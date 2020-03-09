@@ -40,10 +40,14 @@ body{
 .titleBar{
     height:auto;
     color: #FFFFFF;
-    margin: auto;
+    margin: auto 0;
     font-size: calc(16px + 1vh);
 }
 
 .titleBar::first-letter{
+    color: #FF5BBD;
+}
+
+span.highlight{
     color: #FF5BBD;
 }
