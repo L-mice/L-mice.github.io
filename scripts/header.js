@@ -32,7 +32,9 @@ const Header = {
         icon.classList.add(Header.CLASS_NAME.icon);
     
         let titleBar = document.createElement("p");
-        //titleBar.innerHTML = SUBTITLE;
+        if(SUBTITLE instanceof String){
+            titleBar.innerHTML = SUBTITLE;
+        }
         titleBar.classList.add(Header.CLASS_NAME.title);
     
         Header.item.leftside.appendChild(icon);
@@ -48,12 +50,10 @@ const Header = {
         }).addClass(Header.CLASS_NAME.header_btn);
 
         let toolBtn = makeBasicButton("Tools", function(){
-            alert("Useful Tools");
             location.href = "/articles/tools";
         }).addClass(Header.CLASS_NAME.header_btn);
 
         let articlesBtn = makeBasicButton("Articles", function(){
-            alert("Articles Button");
             location.href = "/articles";
         }).addClass(Header.CLASS_NAME.header_btn);
 
