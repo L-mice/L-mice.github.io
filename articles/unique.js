@@ -48,10 +48,10 @@ function makeItem(text, dir){
     title.classList.add("itemTitle");
 
     let cover = document.createElement("div");
-    btn.onclick = function(){
+    cover.onclick = function(){
         location.href = dir;
-    }
-    btn.classList.add("cover");
+    };
+    cover.classList.add("cover");
 
     itemBack.appendChild(thumb);
     itemBack.appendChild(title);
