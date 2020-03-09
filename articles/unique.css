@@ -1,5 +1,5 @@
 .item_back{
-    width: 100%;
+    width: calc(60vw * 0.9);
     height: 8vh;
     margin: 4px 0;
     display:flex;
@@ -18,4 +18,11 @@
     font-size: calc(16px + 1vh);
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #000000;
+}
+
+.cover{
+    position: absolute;
+    width: calc(60vw * 0.9);
+    height: 8vh;
+    background: #00000000;
 }
