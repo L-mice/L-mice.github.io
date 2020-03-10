@@ -15,7 +15,7 @@
 .itemTitle{
     height: auto;
     margin: auto 0;
-    font-size: calc(16px + 1vh);
+    font-size: calc(14px + 1vh);
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #000000;
 }

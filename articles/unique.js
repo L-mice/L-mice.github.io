@@ -1,6 +1,6 @@
 const articleList = [
     {
-        title: "[セール] Sennheiser Momentum True Wireless",
+        title: "愛用のイヤホンが安くなった。",
         dir: "sale_0",
     },
     {
