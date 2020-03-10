@@ -8,10 +8,6 @@ const articleList = [
         dir: "members",
     },
     {
-        title: "Members",
-        dir: "members",
-    },
-    {
         title: "Articles",
         dir: "/articles",
     },
