@@ -1,23 +1,31 @@
 const articleList = [
     {
-        title: "Top",
-        dir: "/",
+        title: "[セール] Sennheiser Momentum True Wireless",
+        dir: "sale_0",
     },
     {
-        title: "About",
-        dir: "about",
+        title: "Members",
+        dir: "members",
     },
     {
-        title: "Tools",
-        dir: "tools",
+        title: "Members",
+        dir: "members",
     },
     {
         title: "Articles",
         dir: "/articles",
     },
     {
-        title: "Members",
-        dir: "members",
+        title: "Tools",
+        dir: "tools",
+    },
+    {
+        title: "About",
+        dir: "about",
+    },
+    {
+        title: "Top",
+        dir: "/",
     },
 ];
 
