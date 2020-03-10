@@ -1,0 +1,20 @@
+.test{
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    margin: 0;
+    background: #00000088;
+    display: flex;
+    text-align: center;
+}
+
+p{
+    width: auto;
+    height: auto;
+    margin: auto;
+    color: #FFFFFF;
+}
+
+.contents{
+    width: 1000vw;
+}
