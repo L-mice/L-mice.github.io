@@ -3,15 +3,16 @@
     width: 100vw;
     height: 10vh;
     margin: 0;
-    background: #00000000;
     display: flex;
+    background: #000000FF;
+    opacity: 0;
     text-align: center;
-    transition: all 2000ms 300ms ease;
+    transition: all 4000ms 300ms ease;
 }
 
 .activeBanner{
-    transform: translateY(90vh);
-    background: #000000FF
+    transform: translateY(88vh);
+    opacity: 1;
 }
 
 p{
