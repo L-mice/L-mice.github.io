@@ -1,0 +1,16 @@
+div.pushLeft{
+    text-align: left;
+}
+
+div#listOfContents{
+    width: 48vw;
+}
+
+span.contentItem{
+    width: 44vw;
+    margin: 2px auto;
+}
+
+div#ads{
+    background: #FFFFFF44;
+}
