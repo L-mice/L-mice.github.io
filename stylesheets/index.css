@@ -4,6 +4,7 @@ body {
 
 .back{
     width: 100vw;
+    height: fit-content;
     display:flex;
     text-align: center;
     align-items: center;
