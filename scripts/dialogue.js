@@ -6,7 +6,6 @@ function makeDialogue(name){
     this.back.style.position = "fixed";
     this.back.style.transform = "translateX(25vw) translateY(25vh)";
     this.back.style.display = "block";
-    this.back.style.borderRadius = "4px";
 
     this.bar = document.createElement("div");
     this.bar.style.width = "50vw";
@@ -18,17 +17,17 @@ function makeDialogue(name){
     this.titleBar = document.createElement("div");
     this.titleBar.id = `${this.back.id}_titlebar`;
     this.titleBar.style.width = "40vw";
+    this.titleBar.style.height = "auto";
     this.titleBar.style.margin = "auto 0";
+    this.titleBar.style.paddingLeft = "4px";
     this.titleBar.style.textAlign = "left";
 
     this.closeBtn = document.createElement("div");
     this.closeBtn.id = `${this.back.id}_btn`;
     this.closeBtn.innerHTML = "close";
     this.closeBtn.style.width = "10vw";
-    this.closeBtn.style.margin = "auto0";
-    this.closeBtn.onclick = function(){
-        this.dismiss();
-    };
+    this.closeBtn.style.height = "auto";
+    this.closeBtn.style.margin = "auto 0";
 
     this.contents = document.createElement("div");
     this.contents.id = `${this.back.id}_contents`;
@@ -73,6 +72,11 @@ function makeDialogue(name){
     this.getDialogue = function(){
         return this.back;
     }
+
+    
+    this.closeBtn.onclick = function(){
+        this.dismiss();
+    };
 
     return this;
 }
