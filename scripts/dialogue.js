@@ -53,4 +53,6 @@ function makeDialogue(){
     this.getDialogue = function(){
         return this.back;
     }
+
+    return this;
 }
