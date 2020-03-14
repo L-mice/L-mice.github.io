@@ -29,7 +29,8 @@ function makeDialogue(name){
     this.closeBtn.style.height = "auto";
     this.closeBtn.style.margin = "auto 0";
     this.closeBtn.onclick = function(){
-        document.getElementById(this.back.id).style.display = "none";
+        let a = this.id.split("_");
+        document.getElementById(`${a[0]}_${a[1]}`).style.display = "none";
     };
 
     this.contents = document.createElement("div");
