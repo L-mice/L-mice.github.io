@@ -4,6 +4,9 @@ const countTime = 10000;
 const filterId = "click_filter";
 const displayId = "count";
 
+let display;
+let filter;
+
 const countList = [];
 let counting = false;
 let highscore;
@@ -13,9 +16,8 @@ let highscore;
     if(!highscore instanceof String) highscore = 0;
     else highscore = Number(highscore);
 
-    let display = document.getElementById(displayId);
-
-    let filter = document.getElementById(filterId);
+    display = document.getElementById(displayId);
+    filter = document.getElementById(filterId);
     filter.onclick = function(){
         if(!counting){
             countList.push(0);
