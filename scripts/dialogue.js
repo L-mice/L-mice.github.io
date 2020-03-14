@@ -1,33 +1,19 @@
 function makeDialogue(name){
     this.back = document.createElement("div");
     this.back.id = `${name}_dialogue`;
-    this.back.style.width = "50vw";
-    this.back.style.height = "50vh";
-    this.back.style.position = "fixed";
-    this.back.style.transform = "translateX(25vw) translateY(-50vh)";
-    this.back.style.display = "block";
+    this.back.classList.add("dialogue_back");
 
     this.bar = document.createElement("div");
-    this.bar.style.width = "50vw";
-    this.bar.style.height = "5vh";
-    this.bar.style.background = "#444444";
-    this.bar.style.color = "#FFFFFF";
-    this.bar.style.display = "flex";
+    this.bar.classList.add("dialogue_bar");
 
     this.titleBar = document.createElement("div");
     this.titleBar.id = `${this.back.id}_titlebar`;
-    this.titleBar.style.width = "40vw";
-    this.titleBar.style.height = "auto";
-    this.titleBar.style.margin = "auto 0";
-    this.titleBar.style.paddingLeft = "4px";
-    this.titleBar.style.textAlign = "left";
+    this.titleBar.classList.add("dialogue_title");
 
     this.closeBtn = document.createElement("div");
     this.closeBtn.id = `${this.back.id}_btn`;
     this.closeBtn.innerHTML = "close";
-    this.closeBtn.style.width = "10vw";
-    this.closeBtn.style.height = "auto";
-    this.closeBtn.style.margin = "auto 0";
+    this.closeBtn.classList.add("dialogue_closebtn");
     this.closeBtn.onclick = function(){
         let a = this.id.split("_");
         document.getElementById(`${a[0]}_${a[1]}`).style.display = "none";
@@ -35,10 +21,7 @@ function makeDialogue(name){
 
     this.contents = document.createElement("div");
     this.contents.id = `${this.back.id}_contents`;
-    this.contents.style.width = "50vw";
-    this.contents.style.height = "45vh";
-    this.contents.style.background = "#FFFFFF";
-    this.contents.style.color = "#000000";
+    this.contents.classList.add("dialogue_contents");
 
     this.bar.appendChild(this.titleBar);
     this.bar.appendChild(this.closeBtn);
