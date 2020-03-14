@@ -20,6 +20,7 @@ let highscore;
     filter = document.getElementById(filterId);
     filter.onclick = function(){
         if(!counting){
+            counting = true;
             countList.push(0);
             setTimeout(function(){
                 counting = false;
