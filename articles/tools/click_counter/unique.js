@@ -29,7 +29,7 @@ let highscore;
                 let sec = countTime/1000;
 
                 let d = makeDialogue(`count-${countList.length}`);
-                document.body.insertAdjacentElement("afterbegin", d.getDialogue());
+                document.body.insertAdjacentElement("beforeend", d.getDialogue());
                 d.setTitle("Your score");
                 d.setMessage(`This time, you clicked ${clicks} times in ${sec} seconds. <br> This is ${clicks/sec} clicks per 1 second.<br><br> Your highest score is ${highscore}/s.`);
                 
