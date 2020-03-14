@@ -6,13 +6,28 @@ function makeDialogue(name){
     this.back.style.position = "fixed";
     this.back.style.transform = "translateX(25vw) translateY(25vh)";
     this.back.style.display = "block";
+    this.back.style.borderRadius = "4px";
 
     this.titleBar = document.createElement("div");
     this.titleBar.id = `${this.back.id}_titlebar`;
-    this.titleBar.style.width = "50vw";
+    this.titleBar.style.width = "40vw";
     this.titleBar.style.height = "5vh";
     this.titleBar.style.background = "#444444";
     this.titleBar.style.color = "#FFFFFF";
+    this.titleBar.style.margin = "auto 4px";
+
+    this.closeBtn = document.createElement("div");
+    this.closeBtn.id = `${this.back.id}_btn`;
+    this.closeBtn.innerHTML = "close";
+    this.closeBtn.style.width = "10vw";
+    this.closeBtn.style.height = "5vh";
+    this.closeBtn.style.background = "#444444";
+    this.closeBtn.style.color = "#FFFFFF";
+    this.closeBtn.style.margin = "auto 4px";
+    this.closeBtn.onclick = function(){
+        this.dismiss();
+    };
+
 
     this.contents = document.createElement("div");
     this.contents.id = `${this.back.id}_contents`;
