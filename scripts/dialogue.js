@@ -8,26 +8,27 @@ function makeDialogue(name){
     this.back.style.display = "block";
     this.back.style.borderRadius = "4px";
 
+    this.bar = document.createElement("div");
+    this.bar.style.width = "50vw";
+    this.bar.style.height = "5vh";
+    this.bar.style.background = "#444444";
+    this.bar.style.color = "#FFFFFF";
+    this.bar.style.display = "flex";
+
     this.titleBar = document.createElement("div");
     this.titleBar.id = `${this.back.id}_titlebar`;
     this.titleBar.style.width = "40vw";
-    this.titleBar.style.height = "5vh";
-    this.titleBar.style.background = "#444444";
-    this.titleBar.style.color = "#FFFFFF";
-    this.titleBar.style.margin = "0";
+    this.titleBar.style.margin = "auto 0";
+    this.titleBar.style.textAlign = "left";
 
     this.closeBtn = document.createElement("div");
     this.closeBtn.id = `${this.back.id}_btn`;
     this.closeBtn.innerHTML = "close";
     this.closeBtn.style.width = "10vw";
-    this.closeBtn.style.height = "5vh";
-    this.closeBtn.style.background = "#444444";
-    this.closeBtn.style.color = "#FFFFFF";
-    this.closeBtn.style.margin = "0";
+    this.closeBtn.style.margin = "auto0";
     this.closeBtn.onclick = function(){
         this.dismiss();
     };
-
 
     this.contents = document.createElement("div");
     this.contents.id = `${this.back.id}_contents`;
@@ -36,8 +37,9 @@ function makeDialogue(name){
     this.contents.style.background = "#FFFFFF";
     this.contents.style.color = "#000000";
 
-    this.back.appendChild(this.titleBar);
-    this.back.appendChild(this.closeBtn);
+    this.bar.appendChild(this.titleBar);
+    this.bar.appendChild(this.closeBtn);
+    this.back.appendChild(this.bar);
     this.back.appendChild(this.contents);
 
     this.setTitle = function(title){
