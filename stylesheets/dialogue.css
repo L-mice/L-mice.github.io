@@ -40,7 +40,16 @@
 }
 
 @media only screen and (max-width: 600px){
-    .dialogue_back .dialogue_bar .dialogue_contents{
+    .dialogue_back{
+        width: 80vw;
+        transform: translateX(10vw) translateY(-75vh);
+    }
+
+    .dialogue_bar{
+        width: 80vw;
+    }
+
+    .dialogue_contents{
         width: 80vw;
     }
 
