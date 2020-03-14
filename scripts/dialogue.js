@@ -74,7 +74,10 @@ function makeDialogue(name){
     }
 
 
-    this.closeBtn.onclick = this.dismiss;
+    let a = function(){
+        this.dismiss();
+    };
+    this.closeBtn.onclick = a;
     
     return this;
 }
