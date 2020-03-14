@@ -28,10 +28,9 @@ function makeDialogue(name){
     this.closeBtn.style.width = "10vw";
     this.closeBtn.style.height = "auto";
     this.closeBtn.style.margin = "auto 0";
-    this.closeBtn.addEventListener("click", function(){
-        let a = this;
-        a.dismiss();
-    });
+    this.closeBtn.onclick = function(){
+        document.getElementById(this.back.id).style.display = "none";
+    };
 
     this.contents = document.createElement("div");
     this.contents.id = `${this.back.id}_contents`;
