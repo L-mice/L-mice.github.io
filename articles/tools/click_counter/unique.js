@@ -27,16 +27,14 @@ let highscore;
 
                 let clicks = countList[countList.length -1];
                 let sec = countTime/1000;
+                let score = Math.floor((clicks/sec)*100)/100;
 
-                if(clicks/sec > highscore){
-                    highscore = clicks/sec;
-                    localStorage.setItem(HIGH_SCORE_ID, clicks/sec);
-                }
+                if(score > highscore) localStorage.setItem(HIGH_SCORE_ID, (highscore = score));
 
                 let d = makeDialogue(`count-${countList.length}`);
                 document.body.insertAdjacentElement("beforeend", d.getDialogue());
                 d.setTitle("Your score");
-                d.setMessage(`This time, you clicked ${clicks} times in ${sec} seconds. <br> This is ${clicks/sec} clicks per 1 second.<br><br> Your highest score is ${highscore}/s.`);
+                d.setMessage(`This time, you clicked ${clicks} times in ${sec} seconds. <br> This is ${score} clicks per 1 second.<br><br> Your highest score is ${highscore}/s.`);
                 
                 display.innerText = "Click";               
             }, countTime);
