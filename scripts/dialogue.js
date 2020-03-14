@@ -4,7 +4,7 @@ function makeDialogue(name){
     this.back.style.width = "50vw";
     this.back.style.height = "50vh";
     this.back.style.position = "fixed";
-    this.back.style.transform = "translateX(25vw) translateY(25vh)";
+    this.back.style.transform = "translateX(25vw) translateY(-50vh)";
     this.back.style.display = "block";
 
     this.bar = document.createElement("div");
