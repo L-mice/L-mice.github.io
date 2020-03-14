@@ -1,0 +1,17 @@
+.counter_base{
+    width: 58vw;
+    height: 58vw;
+    margin: 1vw;
+    background: yellow;
+}
+
+#clickfilter{
+    position: absolute;
+    width: 58vw;
+    height: 58vw;
+}
+
+#count{
+    margin: auto;
+    color: white;
+}

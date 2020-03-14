@@ -2,6 +2,7 @@ const preloads = [
   "/scripts/html.js",
   "/scripts/button.js",
   "/scripts/header.js",
+  "/scripts/dialogue.js",
   "unique.js",
 ];
 
