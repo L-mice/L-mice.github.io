@@ -1,17 +1,40 @@
 .counter_base{
-    width: 58vw;
-    height: 58vw;
-    margin: 1vw;
+    width: 56vw;
+    height: 56vw;
+    margin: 2vw auto;
     background: yellow;
+    display: block;
 }
 
-#clickfilter{
+#click_filter{
     position: absolute;
     width: 58vw;
     height: 58vw;
+    background: white;
+    opacity: 0.5;
 }
 
 #count{
+    width: auto;
+    height:auto;
     margin: auto;
-    color: white;
+    color: black;
+    transform: translateY(28vw);
+}
+
+@media only screen and (max-width: 600px){
+    .counter_base{
+        width: 92vw;
+        height: 92vw;
+        margin: 4vw auto;
+    }
+
+    #click_filter{
+        width: 92vw;
+        height: 92vw;
+    }
+
+    #count{
+        transform: translateY(46vw);
+    }
 }

@@ -18,7 +18,7 @@ let highscore;
     let filter = document.getElementById(filterId);
     filter.onclick = function(){
         if(!counting){
-            countList.push = 0;
+            countList.push(0);
             setTimeout(function(){
                 counting = false;
 
