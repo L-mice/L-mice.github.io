@@ -14,7 +14,7 @@ function makeDialogue(name){
     this.titleBar.style.height = "5vh";
     this.titleBar.style.background = "#444444";
     this.titleBar.style.color = "#FFFFFF";
-    this.titleBar.style.margin = "auto 4px";
+    this.titleBar.style.margin = "0";
 
     this.closeBtn = document.createElement("div");
     this.closeBtn.id = `${this.back.id}_btn`;
@@ -23,7 +23,7 @@ function makeDialogue(name){
     this.closeBtn.style.height = "5vh";
     this.closeBtn.style.background = "#444444";
     this.closeBtn.style.color = "#FFFFFF";
-    this.closeBtn.style.margin = "auto 4px";
+    this.closeBtn.style.margin = "0";
     this.closeBtn.onclick = function(){
         this.dismiss();
     };
