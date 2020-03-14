@@ -13,6 +13,8 @@ let highscore;
     if(!highscore instanceof String) highscore = 0;
     else highscore = Number(highscore);
 
+    let display = document.getElementById(displayId);
+
     let filter = document.getElementById(filterId);
     filter.onclick = function(){
         if(!counting){
@@ -35,5 +37,6 @@ let highscore;
             }, countTime);
         }
         countList[countList.length -1]++;
+        display.innerText = countList[countList.length -1];
     };
 })();
