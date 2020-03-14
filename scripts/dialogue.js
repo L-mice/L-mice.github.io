@@ -75,7 +75,7 @@ function makeDialogue(name){
 
 
     this.closeBtn.onclick = function(){
-        dismiss();
+        this.setVisiblity(false);
     };
 
     return this;
