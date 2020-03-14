@@ -1,18 +1,21 @@
-function makeDialogue(){
+function makeDialogue(name){
     this.back = document.createElement("div");
+    this.back.id = `${name}_dialogue`;
     this.back.style.width = "50vw";
     this.back.style.height = "50vh";
     this.back.style.position = "fixed";
     this.back.style.transform = "translateX(25vw) translateY(25vh)";
     this.back.style.display = "block";
 
-    this.titleBar = document.createElement("span");
+    this.titleBar = document.createElement("div");
+    this.titleBar.id = `${this.back.id}_titlebar`;
     this.titleBar.style.width = "50vw";
     this.titleBar.style.height = "5vh";
     this.titleBar.style.background = "#444444";
     this.titleBar.style.color = "#FFFFFF";
 
     this.contents = document.createElement("div");
+    this.contents.id = `${this.back.id}_contents`;
     this.contents.style.width = "50vw";
     this.contents.style.height = "45vh";
     this.contents.style.background = "#FFFFFF";
@@ -22,24 +25,23 @@ function makeDialogue(){
     this.back.appendChild(contents);
 
     this.setTitle = function(title){
-        this.titleBar.innerHTML = title;
+        document.getElementById(this.titleBar.id).innerHTML = title;
     };
 
     this.getTitle = function(){
-        return this.titleBar.innerHTML;
+        return document.getElementById(this.titleBar.id).innerHTML;
     }
 
     this.setMessage = function(message){
-        this.contents.innerHTML = message;
+        document.getElementById(this.contents.id).innerHTML = message;
     }
 
     this.getMessage = function(){
-        return this.contents.innerHTML;
+        return document.getElementById(this.contents.id).innerHTML;
     }
 
     this.setVisiblity = function(visiblity){
-        if(visiblity) this.back.display = "block";
-        else this.back.display = "none";
+        document.getElementById(this.back.id).style.display = visiblity ? "block" : "none";
     }
     
     this.show = function(){
