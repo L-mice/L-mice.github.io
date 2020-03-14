@@ -36,8 +36,9 @@ function makeDialogue(name){
     this.contents.style.background = "#FFFFFF";
     this.contents.style.color = "#000000";
 
-    this.back.appendChild(titleBar);
-    this.back.appendChild(contents);
+    this.back.appendChild(this.titleBar);
+    this.back.appendChild(this.closeBtn);
+    this.back.appendChild(this.contents);
 
     this.setTitle = function(title){
         document.getElementById(this.titleBar.id).innerHTML = title;
