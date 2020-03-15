@@ -9,7 +9,7 @@
 }
 
 .item_back:hover{
-    background: #FF5BBD88;
+    background: #FF5BBD44;
 }
 
 .itemThumbnail{
@@ -25,23 +25,8 @@
     color: #000000;
 }
 
-.cover{
-    position: absolute;
-    width: calc(60vw * 0.9);
-    height: 8vh;
-    background: #00000000;
-}
-
-.cover:hover{
-    background: #FF5BBD44;
-}
-
 @media only screen and (max-width: 600px){
     .item_back{
-        width: calc(100vw * 0.9);
-    }
-
-    .cover{
         width: calc(100vw * 0.9);
     }
 }
