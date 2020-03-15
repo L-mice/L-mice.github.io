@@ -1,4 +1,13 @@
 const SUBTITLE = "Top";
-const INDEX_CSS = "index.css";
 
-importCss(INDEX_CSS);
+const topItems = [
+    {
+        title: "Test",
+        description: "Test Description",
+        thumbnail: "/images/neko_thumbnail.png",
+    },
+];
+
+(function(){
+    
+})();

@@ -1,6 +1,6 @@
 const HIGH_SCORE_ID = "Click Counter Highscore";
 
-const countTime = 3000;
+const countTime = 5000;
 
 const counterId = "counter";
 const displayId = "counter_display";
