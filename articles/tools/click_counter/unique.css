@@ -3,7 +3,6 @@
     height: 56vw;
     margin: 2vw auto;
     background: yellow;
-    display: block;
 }
 
 @media only screen and (max-width: 600px){
