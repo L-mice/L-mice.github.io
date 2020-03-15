@@ -2,8 +2,8 @@
     width: 50vw;
     height: 50vh;
     position: fixed;
-    transform: translateX(25vw) translateY(-75vh);
     display: block;
+    margin: auto;
 }
 
 .dialogue_bar{
@@ -44,7 +44,6 @@
 @media only screen and (max-width: 600px){
     .dialogue_back{
         width: 80vw;
-        transform: translateX(10vw) translateY(-75vh);
     }
 
     .dialogue_bar{

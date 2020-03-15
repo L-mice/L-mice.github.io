@@ -1,6 +1,12 @@
 function makeDialogue(name){
+    this.background = document.createElement("div");
+    this.background.id = `${name}_dialogue`;
+    this.background.style.width = "100vw";
+    this.background.style.height = "100vh";
+    this.background.style.background = "#00000000";
+    this.background.style.display = "flex";
+
     this.back = document.createElement("div");
-    this.back.id = `${name}_dialogue`;
     this.back.classList.add("dialogue_back");
 
     this.bar = document.createElement("div");
