@@ -34,6 +34,8 @@ function makeDialogue(name){
     this.back.appendChild(this.bar);
     this.back.appendChild(this.contents);
 
+    this.background.appendChild(this.back);
+
     this.setTitle = function(title){
         document.getElementById(this.titleBar.id).innerHTML = title;
     };
@@ -63,7 +65,7 @@ function makeDialogue(name){
     }
 
     this.getDialogue = function(){
-        return this.back;
+        return this.background;
     }
 
     return this;

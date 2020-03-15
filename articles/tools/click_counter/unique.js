@@ -32,7 +32,7 @@ let highscore;
                 if(score > highscore) localStorage.setItem(HIGH_SCORE_ID, (highscore = score));
 
                 let d = makeDialogue(`count-${countList.length}`);
-                document.body.insertAdjacentElement("beforeend", d.getDialogue());
+                document.body.insertAdjacentElement("afterbegin", d.getDialogue());
                 d.setTitle("Your score");
                 d.setMessage(`This time, you clicked ${clicks} times in ${sec} seconds. <br> This is ${score} clicks per 1 second.<br><br> Your highest score is ${highscore}/s.`);
                 
