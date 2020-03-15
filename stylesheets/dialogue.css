@@ -1,7 +1,6 @@
 .dialogue_back{
     width: 50vw;
     height: 50vh;
-    position: fixed;
     display: block;
     margin: auto;
 }

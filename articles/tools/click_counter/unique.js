@@ -1,11 +1,9 @@
 const HIGH_SCORE_ID = "Click Counter Highscore";
 
 const countTime = 3000;
-const filterId = "click_filter";
-const displayId = "count";
+const counterId = "counter";
 
-let display;
-let filter;
+let counter;
 
 const countList = [];
 let counting = false;
@@ -16,9 +14,8 @@ let highscore;
     if(!highscore instanceof String) highscore = 0;
     else highscore = Number(highscore);
 
-    display = document.getElementById(displayId);
-    filter = document.getElementById(filterId);
-    filter.onclick = function(){
+    counter = document.getElementById(counterId);
+    counter.onclick = function(){
         if(!counting){
             counting = true;
             countList.push(0);
@@ -36,10 +33,10 @@ let highscore;
                 d.setTitle("Your score");
                 d.setMessage(`This time, you clicked ${clicks} times in ${sec} seconds. <br> This is ${score} clicks per 1 second.<br><br> Your highest score is ${highscore}/s.`);
                 
-                display.innerText = "Click";               
+                counter.innerText = "Click";               
             }, countTime);
         }
         countList[countList.length -1]++;
-        display.innerText = countList[countList.length -1];
+        counter.innerText = countList[countList.length -1];
     };
 })();

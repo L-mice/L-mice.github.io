@@ -1,4 +1,4 @@
-.counter_base{
+.counter{
     width: 56vw;
     height: 56vw;
     margin: 2vw auto;
@@ -6,35 +6,10 @@
     display: block;
 }
 
-#click_filter{
-    position: absolute;
-    width: 56vw;
-    height: 56vw;
-    background: white;
-    opacity: 0;
-}
-
-#count{
-    width: auto;
-    height:auto;
-    margin: auto;
-    color: black;
-    transform: translateY(28vw);
-}
-
 @media only screen and (max-width: 600px){
-    .counter_base{
+    .counter{
         width: 92vw;
         height: 92vw;
         margin: 4vw auto;
-    }
-
-    #click_filter{
-        width: 92vw;
-        height: 92vw;
-    }
-
-    #count{
-        transform: translateY(46vw);
     }
 }
