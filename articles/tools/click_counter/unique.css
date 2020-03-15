@@ -10,10 +10,11 @@
 #counter_display{
     margin: auto;
     color: #000000;
+    font-size: 24px;
 }
 
 @media only screen and (max-width: 600px){
-    .counter{
+    #counter{
         width: 92vw;
         height: 92vw;
         margin: 4vw auto;
