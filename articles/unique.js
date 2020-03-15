@@ -42,6 +42,9 @@ const articleList = [
 function makeItem(text, dir){
     let itemBack = document.createElement("div");
     itemBack.classList.add("item_back");
+    itemBack.onclick = function(){
+        location.href = dir;
+    };
 
     let thumb = document.createElement("img");
     thumb.src = "/images/neko_thumbnail.png";
@@ -59,7 +62,7 @@ function makeItem(text, dir){
 
     itemBack.appendChild(thumb);
     itemBack.appendChild(title);
-    itemBack.appendChild(cover);
+    //itemBack.appendChild(cover);
 
     return itemBack;
 }

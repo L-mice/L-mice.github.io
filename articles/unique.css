@@ -5,6 +5,11 @@
     display:flex;
     background: #00000000;
     border: 1px solid #000000;
+    user-select: none;
+}
+
+.item_back:hover{
+    background: #FF5BBD88;
 }
 
 .itemThumbnail{
