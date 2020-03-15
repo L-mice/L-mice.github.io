@@ -1,8 +1,15 @@
-.counter{
+#counter{
     width: 56vw;
     height: 56vw;
     margin: 2vw auto;
     background: yellow;
+    display: flex;
+    user-select: none;
+}
+
+#counter_display{
+    margin: auto;
+    color: #000000;
 }
 
 @media only screen and (max-width: 600px){
