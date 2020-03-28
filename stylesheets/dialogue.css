@@ -3,6 +3,7 @@
     height: 50vh;
     display: block;
     margin: auto;
+    border: 1px solid #000000;
 }
 
 .dialogue_bar{
