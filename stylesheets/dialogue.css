@@ -1,6 +1,6 @@
 .dialogue_back{
     width: 50vw;
-    height: 50vh;
+    height: 75vh;
     display: block;
     margin: auto;
     border: 1px solid #000000;
@@ -36,7 +36,7 @@
 
 .dialogue_contents{    
     width: 50vw;
-    height: 45vh;
+    height: 70vh;
     background: #FFFFFF;
     color: #000000;
 }
