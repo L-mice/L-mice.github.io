@@ -1,45 +1,17 @@
-const subject_list_name = "Class Subjects";
-const timetable_name = "School Time Table";
-const classtime_list_name = "Class Time List";
-
 let subjects;
-/*
-    [
-        {
-            name: "subject name",
-            colour: "colour for this subject"
-        }
-    ]
-*/
-
 let timetable;
-/*
-    timetable[sunday, monday, - , saturday]
-    [
-        [
-            0,  //index of subject
-            2,
-            5,
-        ]
-    ]
-*/
-
 let classtime;
-/*
-    [
-        {
-            start: "8:50",
-            end: "9:40"
-        }
-    ]
-*/
+
 
 let tableitems = [];
 
 (function(){
+    //config button
     let confBtn = document.createElement("div");
     confBtn.classList.add("floatBtn");
-    confBtn.id = "configBtn";
+    confBtn.onclick = function(){
+        location.href = "config";
+    };
 
     let icon = document.createElement("img");
     icon.src = "/images/gear.png";
