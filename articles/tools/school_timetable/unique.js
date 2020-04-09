@@ -7,7 +7,7 @@ let subjects;
     [
         {
             name: "subject name",
-            background: "table item background for this subject"
+            colour: "colour for this subject"
         }
     ]
 */
@@ -76,7 +76,7 @@ function timetableBuild(){
 function createTableItem(subject, time){
     let back = document.createElement("div");
     back.classList.add("item");
-    back.style.background = subject.background;
+    back.style.colour = subject.colour;
 
     let start  = classtime[time].start;
     let end = classtime[time].end;

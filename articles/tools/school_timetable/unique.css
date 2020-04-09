@@ -26,9 +26,10 @@
 
 .inside{
     width: calc(54vw - 10vh);
-    height: 9vh;
     margin: auto;
     color: #FFFFFF;
+    font-size: 24px;
+    text-align: left;
 }
 
 .floatBtn{

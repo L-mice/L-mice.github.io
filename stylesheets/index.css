@@ -23,8 +23,6 @@ body {
     background: url("/images/pink_cat.png");
     background-size: contain;
     background-repeat: repeat-y;
-    padding-left: 4px;
-    padding-right: 4px;   
     display: block;
     overflow: hidden;
 }
@@ -38,6 +36,5 @@ body {
         width: 100vw;
         height: 100%;
         min-height: calc(100vw*(1920/1080));
-        padding: 0 8px;
     }
 }
