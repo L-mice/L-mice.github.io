@@ -48,17 +48,18 @@ function timetableDataSetup(){
 }
 
 function timetableDataSave(){
-    localStorage.setItem(JSON.stringify(subject_list_name), subjects);
-    localStorage.setItem(JSON.stringify(timetable_name), timetable);
-    localStorage.setItem(JSON.stringify(classtime_list_name), classtime);
+    localStorage.setItem(subject_list_name, JSON.stringify(subjects));
+    localStorage.setItem(timetable_name, JSON.stringify(timetable));
+    localStorage.setItem(classtime_list_name, JSON.stringify(classtime));
 }
 
 function timetableBuild(){
     let date = new Date();
     let day = date.getDay();
 
-    let classes = timetable[day];
+    let classes = timetable[day] || [];
 
+    let table = document.getElementById("table");
     for(let k = 0; k < classes.length; k++){
         let subject = subjects[classes[k]];
         let item = createTableItem(subject, k);
@@ -68,6 +69,7 @@ function timetableBuild(){
         }, 50);
 
         tableitems.push(item);
+        table.appendChild(item);
     }
 }
 
