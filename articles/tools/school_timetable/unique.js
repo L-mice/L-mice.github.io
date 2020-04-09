@@ -80,7 +80,7 @@ function createTableItem(subject, time){
     let start  = classtime[time].start;
     let end = classtime[time].end;
     let sub = subject.name;
-    time++;
+    time += 1;
 
     let inside = document.createElement("div");
     inside.classList.add("inside");
