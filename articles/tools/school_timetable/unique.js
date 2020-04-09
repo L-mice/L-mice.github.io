@@ -66,7 +66,7 @@ function timetableBuild(){
         item.classList.add("nextday");
         setTimeout(function(){
             item.classList.remove("nextday")
-        }, 50);
+        }, 500*k);
 
         tableitems.push(item);
         table.appendChild(item);
@@ -76,7 +76,6 @@ function timetableBuild(){
 function createTableItem(subject, time){
     let back = document.createElement("div");
     back.classList.add("item");
-    back.style.colour = subject.colour;
 
     let start  = classtime[time].start;
     let end = classtime[time].end;
@@ -84,7 +83,8 @@ function createTableItem(subject, time){
 
     let inside = document.createElement("div");
     inside.classList.add("inside");
-    inside.innerText = ` ${time} ${start} - ${end} | ${sub}`;
+    inside.style.color = subject.colour;
+    inside.innerText = ` ${time++} ${start} - ${end} | ${sub}`;
 
     back.appendChild(inside);
 
