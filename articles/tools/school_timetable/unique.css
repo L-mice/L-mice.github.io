@@ -1,5 +1,5 @@
 .timetable{
-    width: 100%;
+    width: 60vw;
     height: 80vh;
     display: block;
     background: #00000000;
@@ -7,18 +7,28 @@
 }
 
 .item{
-    width: 96%;
+    width: 54vw;
     height: 10vh;
+    border-radius: 5vh;
     margin: 2px auto;
     transition: all 500ms 0ms ease;
+    user-select: none;
+    display: flex;
 }
 
 .lastday{
-    
+    transform: translateX(-100vw);
 }
 
 .nextday{
+    transform: translateX(100vw);
+}
 
+.inside{
+    width: calc(54vw - 10vh);
+    height: 9vh;
+    margin: auto;
+    color: #FFFFFF;
 }
 
 .floatBtn{
@@ -26,4 +36,18 @@
     height: 5vh;
     opacity: 0.75;
     display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .timetable{
+        width: 100vw;
+    }
+
+    .item{
+        width: 98vw;
+    }
+
+    .inside{
+        width: calc(98vw - 10vh);
+    }
 }
