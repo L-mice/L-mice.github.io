@@ -39,6 +39,14 @@
     height: 5vh;
     opacity: 0.75;
     display: none;
+    border-radius: 2.5vh;
+    background: #FF5BBD;
+    user-select: none;
+}
+
+.btnIcon{
+    width: 5vh;
+    height: 5vh;
 }
 
 @media only screen and (max-width: 600px){

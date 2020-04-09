@@ -65,7 +65,7 @@ function timetableBuild(){
         let item = createTableItem(subject, k);
         item.classList.add("nextday");
         setTimeout(function(){
-            item.classList.remove("nextday")
+            item.classList.remove("nextday");
         }, 300*(k+1));
 
         tableitems.push(item);
