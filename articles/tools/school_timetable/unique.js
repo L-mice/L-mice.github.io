@@ -66,7 +66,7 @@ function timetableBuild(){
         item.classList.add("nextday");
         setTimeout(function(){
             item.classList.remove("nextday")
-        }, 300*k);
+        }, 300*(k++));
 
         tableitems.push(item);
         table.appendChild(item);
@@ -80,7 +80,7 @@ function createTableItem(subject, time){
     let start  = classtime[time].start;
     let end = classtime[time].end;
     let sub = subject.name;
-    time += 1;
+    time++;
 
     let inside = document.createElement("div");
     inside.classList.add("inside");
