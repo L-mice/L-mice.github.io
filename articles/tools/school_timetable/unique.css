@@ -9,11 +9,13 @@
 .item{
     width: 54vw;
     height: 10vh;
-    border-radius: 5vh;
-    margin: 2px auto;
+    border-radius: 2vh;
+    border: 0.5px solid #000000;
+    margin: 4px auto;
     transition: all 500ms 0ms ease;
     user-select: none;
     display: flex;
+    background: #FFFFFF;
 }
 
 .lastday{
@@ -27,7 +29,7 @@
 .inside{
     width: calc(54vw - 10vh);
     margin: auto;
-    color: #FFFFFF;
+    color: #000000;
     font-size: 24px;
     text-align: left;
 }
