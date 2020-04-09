@@ -66,7 +66,7 @@ function timetableBuild(){
         item.classList.add("nextday");
         setTimeout(function(){
             item.classList.remove("nextday")
-        }, 300*(k++));
+        }, 300*(k+1));
 
         tableitems.push(item);
         table.appendChild(item);
