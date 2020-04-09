@@ -67,6 +67,6 @@
     }
 
     .floatBtn{
-        transform: translateX(calc(98vw - 10vh)) translateY(calc(83vh - 2vw));
+        transform: translateX(calc(100vw - 10vh)) translateY(calc(90vh - 2vw));
     }
 }

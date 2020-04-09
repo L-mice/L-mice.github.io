@@ -37,6 +37,17 @@ let classtime;
 let tableitems = [];
 
 (function(){
+    let confBtn = document.createElement("div");
+    confBtn.classList.add("floatBtn");
+    confBtn.id = "configBtn";
+
+    let icon = document.createElement("img");
+    icon.src = "/images/gear.png";
+    icon.classList.add("btnIcon");
+    confBtn.appendChild(icon);
+
+    document.body.insertAdjacentElement("afterbegin", confBtn);
+
     timetableDataSetup();
     timetableBuild();
 })();
