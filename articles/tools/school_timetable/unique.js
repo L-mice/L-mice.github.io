@@ -43,7 +43,7 @@ let tableitems = [];
 
 function timetableDataSetup(){
     subjects = JSON.parse(localStorage.getItem(subject_list_name)) || [];
-    timetable = JSON.parse(localStorage.getItem(timetable_name)) || [];
+    timetable = JSON.parse(localStorage.getItem(timetable_name)) || [[],[],[],[],[],[],[]];
     classtime = JSON.parse(localStorage.getItem(classtime_list_name)) || [];    
 }
 
