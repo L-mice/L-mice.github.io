@@ -37,7 +37,7 @@ let editTimetableBtn;
     };
 
     editTimeTableBtn = document.getElementById(editTimeTableBtnId);
-    editTimetableBtn.onclick = function(){
+    editTimeTableBtn.onclick = function(){
         editor.classList.remove(editSubjectClass);
         editor.classList.remove(editTimeClass);
         editor.classList.add(editTimeTableClass);
