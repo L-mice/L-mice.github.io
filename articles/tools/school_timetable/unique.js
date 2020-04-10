@@ -23,7 +23,7 @@ let dateDisplay;
     dateDisplay.innerText = date.toDateString();
     dateDisplay.onclick = function(){
         let newdate = new Date();
-        let next = 0 <= (date - (newdate));
+        let next = 0 < (date - (newdate));
         date = newdate;
         timetableBuild(next);
     };
