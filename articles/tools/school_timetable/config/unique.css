@@ -17,6 +17,9 @@
     color: #FFFFFF;
 }
 
+.backBtnLabel:hover{
+    color: #BBBBBB;
+}
 
 .editorBar{
     width: 48vw;

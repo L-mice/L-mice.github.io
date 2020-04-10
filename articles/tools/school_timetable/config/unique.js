@@ -1,3 +1,4 @@
+const backBtnId = "backBtn";
 const editSubjectBtnId = "editSubjectBtn";
 const editTimeBtnId = "editTimeBtn";
 const editTimeTableBtnId = "editTimetableBtn";
@@ -12,7 +13,7 @@ const editTimeTableClass = "editTimeTable";
 
 const editorId = "editor";
 
-
+let backBtn;
 let editor;
 let editSubjectBtn;
 let editTimeBtn;
@@ -20,6 +21,11 @@ let editTimetableBtn;
 
 
 (function(){
+    backBtn = document.getElementById(backBtnId);
+    backBtn.onclick = function(){
+        location.href = "../";
+    };
+
     editor = document.getElementById(editorId);
 
     editSubjectBtn = document.getElementById(editSubjectBtnId);
