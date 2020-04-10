@@ -71,11 +71,12 @@
     height: 10vh;
     opacity: 0.75;
     position: fixed;
-    transform: translateX(calc(90vw - 10vh)) translateY(80vh);
     border-radius: 5vh;
     background: #FF5BBD;
     user-select: none;
     display:flex;
+    bottom:0;
+    right:0;
 }
 
 .btnIcon{
@@ -108,9 +109,5 @@
     .inside{
         width: calc(98vw - 10vh);
         font-size: 22px;
-    }
-
-    .floatBtn{
-        transform: translateX(calc(94vw - 10vh )) translateY(calc(90vh - 6vw));
     }
 }
