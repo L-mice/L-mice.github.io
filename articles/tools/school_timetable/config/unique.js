@@ -3,13 +3,17 @@ const editSubjectBtnId = "editSubjectBtn";
 const editTimeBtnId = "editTimeBtn";
 const editTimeTableBtnId = "editTimetableBtn";
 
+const editSubjectLabelId = "editSubjectLabel";
+const editTimeLabelId = "editTimeLabel";
+const editTimetableLabelId = "editTimetableLabel";
+
 const editSubjectId = "subjectEditor";
 const editTimeId = "timeEditor";
 const editTimeTableId = "timetableEditor";
 
 const editSubjectClass = "editSubject";
 const editTimeClass = "editTime";
-const editTimeTableClass = "editTimeTable";
+const editTimeTableClass = "editTimetable";
 
 const editorId = "editor";
 
@@ -20,6 +24,10 @@ let editor;
 let editSubjectBtn;
 let editTimeBtn;
 let editTimetableBtn;
+
+let editSubjectLabel;
+let editTimeLabel;
+let editTimetableLabel;
 
 
 (function(){
@@ -36,9 +44,9 @@ let editTimetableBtn;
         editor.classList.remove(editTimeClass);
         editor.classList.remove(editTimeTableClass);
 
-        editSubjectBtn.classList.add(selectedId);
-        editTimeBtn.classList.remove(selectedId);
-        editTimeTableBtn.classList.remove(selectedId);
+        editSubjectLabel.classList.add(selectedId);
+        editTimeLabel.classList.remove(selectedId);
+        editTimeTableLabel.classList.remove(selectedId);
     };
 
     editTimeBtn = document.getElementById(editTimeBtnId);
@@ -47,9 +55,9 @@ let editTimetableBtn;
         editor.classList.add(editTimeClass);
         editor.classList.remove(editTimeTableClass);
 
-        editSubjectBtn.classList.remove(selectedId);
-        editTimeBtn.classList.add(selectedId);
-        editTimeTableBtn.classList.remove(selectedId);
+        editSubjectLabel.classList.remove(selectedId);
+        editTimeLabel.classList.add(selectedId);
+        editTimetableLabel.classList.remove(selectedId);
     };
 
     editTimeTableBtn = document.getElementById(editTimeTableBtnId);
@@ -58,8 +66,12 @@ let editTimetableBtn;
         editor.classList.remove(editTimeClass);
         editor.classList.add(editTimeTableClass);
 
-        editSubjectBtn.classList.remove(selectedId);
-        editTimeBtn.classList.remove(selectedId);
-        editTimeTableBtn.classList.add(selectedId);
+        editSubjectLabel.classList.remove(selectedId);
+        editTimeLabel.classList.remove(selectedId);
+        editTimetableLabel.classList.add(selectedId);
     };
+
+    editSubjectLabel = document.getElementById(editSubjectLabelId);
+    editTimeLabel = document.getElementById(editTimeLabelId);
+    editTimetableLabel = document.getElementById(editTimetableLabelId);
 })();
