@@ -69,7 +69,7 @@ function timetableBuild(next){
         }, 600);
     }
 
-    for(let k = 0; k < classtime.length; k++){
+    for(let k = 0; k < classes.length; k++){
         let subject = subjects[classes[k]];
         let item = createTableItem(subject, k);
         item.classList.add(aaaa);
