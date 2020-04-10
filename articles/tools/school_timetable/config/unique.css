@@ -45,7 +45,7 @@
 
 .editor{
     width: 180vw;
-    height: calc(94vh - 4vw);
+    min-height: calc(94vh - 4vw);
     display: flex;
 }
 
@@ -63,7 +63,7 @@
 
 .editorPanel{
     width: 56vw;
-    height: calc(94vh - 14vw);
+    min-height: calc(94vh - 14vw);
     margin: 2vw;
     background: #888888;
 }
@@ -89,7 +89,7 @@
 
     .editor{
         width: 300vw;
-        height: calc(94vh - 10vw);
+        min-height: calc(94vh - 10vw);
     }
 
     .editSubject{
@@ -106,7 +106,7 @@
 
     .editorPanel{
         width: 96vw;
-        height: calc(94vh - 12vw);
+        min-height: calc(94vh - 12vw);
         margin: 2vw;
     }
 }
