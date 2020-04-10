@@ -74,9 +74,9 @@
     border-radius: 5vh;
     background: #FF5BBD;
     user-select: none;
-    display:flex;
-    bottom:0;
-    right:0;
+    display: flex;
+    bottom: 16px;
+    right: 16px;
 }
 
 .btnIcon{

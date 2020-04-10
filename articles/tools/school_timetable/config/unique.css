@@ -1,0 +1,39 @@
+.topBar{
+    display: flex;
+    user-select: none;
+}
+
+.backBtn{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 6vh;
+    background: #888888;
+    display: flex;
+    margin: 8px 2.5vw;
+}
+
+.backBtnLabel{
+    margin:auto;
+    color: #FFFFFF;
+}
+
+
+.editorBar{
+    width: 80vw;
+    height: 10vw;
+    border-radius: 5vw;
+    background: #888888;
+    margin: 8px 2.5vw;
+    display: flex;
+    padding: 0;
+}
+
+.barBtn{
+    width: calc(80vw / 3);
+    margin: auto;
+}
+
+.barBtnLabel{
+    margin: auto;
+    color: #FFFFFF;
+}
