@@ -20,7 +20,7 @@ let dateDisplay;
         toNextday();
     };
     dateDisplay = document.getElementById("dateDisplay");
-    dateDisplay.innerText = date.toString();
+    dateDisplay.innerText = date.toDateString();
 
     //config button
     let confBtn = document.createElement("div");
@@ -64,7 +64,7 @@ function timetableBuild(next){
 
     for(let k = 0; k < listItem.length; k++){
         let item = listItem[k];
-        
+
         item.classList.add(bbbb);
         setTimeout(function(){
             item.remove();
@@ -87,13 +87,13 @@ function timetableBuild(next){
 
 function toNextday(){
     date.setDate(date.getDate()+1);
-    dateDisplay.innerText = date.toString();
+    dateDisplay.innerText = date.toDateString();
     timetableBuild(true);
 }
 
 function toPreviousday(){
     date.setDate(date.getDate()-1);
-    dateDisplay.innerText = date.toString();
+    dateDisplay.innerText = date.toDateString();
     timetableBuild(false);
 }
 
