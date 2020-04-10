@@ -47,6 +47,7 @@
     width: 180vw;
     min-height: calc(94vh - 4vw);
     display: flex;
+    transition: all 500ms 0ms ease;
 }
 
 .editSubject{
