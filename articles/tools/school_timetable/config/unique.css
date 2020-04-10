@@ -48,6 +48,13 @@
     height: calc(94vh - 4vw);
 }
 
+.editorPanel{
+    width: 56vw;
+    height: calc(94vh - 14vw);
+    margin: 2vw;
+    background: #888888;
+}
+
 
 
 @media only screen and (max-width: 600px){
