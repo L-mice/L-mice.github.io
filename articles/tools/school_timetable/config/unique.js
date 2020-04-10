@@ -46,7 +46,7 @@ let editTimetableLabel;
 
         editSubjectLabel.classList.add(selectedId);
         editTimeLabel.classList.remove(selectedId);
-        editTimeTableLabel.classList.remove(selectedId);
+        editTimetableLabel.classList.remove(selectedId);
     };
 
     editTimeBtn = document.getElementById(editTimeBtnId);
