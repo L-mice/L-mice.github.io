@@ -130,6 +130,6 @@ function setupBar(){
         let newdate = new Date();
         let next = -1000*60*60*24 <= (date - (newdate));
         date = newdate;
-        timetableBuild(next);
+        timetableBuild(!next);
     };
 }
