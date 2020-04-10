@@ -63,7 +63,7 @@ function timetableBuild(next){
     let listItem = table.children;
 
     for(let k = 0; k < listItem.length; k++){
-        listItem[k].add(bbbb);
+        listItem[k].classList.add(bbbb);
         setTimeout(function(){
             listItem[k].remove();
         }, 600);
