@@ -59,7 +59,7 @@ function addSubject(subject){
 
 
 function getTimetable(){
-    return (JSON.parse(localStorage.getItem(timetable_name) || (new Array(7)).fill((new Array(getClassTime().length)).fill(0)) ));
+    return (JSON.parse(localStorage.getItem(timetable_name)) || (new Array(7)).fill((new Array(getClassTime().length)).fill(0)) );
 }
 
 function setTimetable(timetable){
