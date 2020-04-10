@@ -2,13 +2,25 @@ let subjects;
 let timetable;
 let classtime;
 
-
-let tableitems = [];
-
 let date;
+
+let pBtn;
+let nBtn;
+let dateDisplay;
 
 (function(){
     date = new Date();
+
+    pBtn = document.getElementById("previousBtn");
+    pBtn.onclick = function(){
+        toPreviousday();
+    };
+    nBtn = document.getElementById("nextBtn");
+    nBtn.onclick = function(){
+        toNextday();
+    };
+    dateDisplay = document.getElementById("dateDisplay");
+    dateDisplay.innerText = date.toString();
 
     //config button
     let confBtn = document.createElement("div");
@@ -25,7 +37,7 @@ let date;
     document.body.insertAdjacentElement("afterbegin", confBtn);
 
     timetableDataSetup();
-    timetableBuild();
+    timetableBuild(true);
 })();
 
 function timetableDataSetup(){
@@ -40,23 +52,45 @@ function timetableDataSave(){
     setClassTime(classtime);
 }
 
-function timetableBuild(){
+function timetableBuild(next){
     let day = date.getDay();
-
     let classes = timetable[day] || [];
 
+    let aaaa = next ? "nextday" : "previousday";
+    let bbbb = !next ? "nextday" : "previousday";
+
     let table = document.getElementById("table");
+    let listItem = table.children;
+
+    for(let k = 0; k < listItem.length; k++){
+        listItem[k].add(bbbb);
+        setTimeout(function(){
+            listItem[k].remove();
+        }, 600);
+    }
+
     for(let k = 0; k < classtime.length; k++){
         let subject = subjects[classes[k]];
         let item = createTableItem(subject, k);
-        item.classList.add("previousday");
+        item.classList.add(aaaa);
         setTimeout(function(){
-            item.classList.remove("previousday");
+            item.classList.remove(aaaa);
         }, 300*(k+1));
 
-        tableitems.push(item);
         table.appendChild(item);
     }
+}
+
+function toNextday(){
+    date.setDate(date.getDate()++);
+    dateDisplay.innerText = date.toString();
+    timetableBuild(true);
+}
+
+function toPreviousday(){
+    date.setDate(date.getDate()--);
+    dateDisplay.innerText = date.toString();
+    timetableBuild(false);
 }
 
 function createTableItem(subject, time){
