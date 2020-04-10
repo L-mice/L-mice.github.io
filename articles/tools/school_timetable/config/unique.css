@@ -46,6 +46,19 @@
 .editor{
     width: 180vw;
     height: calc(94vh - 4vw);
+    display: flex;
+}
+
+.editSubject{
+    transform: translateX(0vw);
+}
+
+.editTime{
+    transform: translateX(-60vw);
+}
+
+.editTimetable{
+    transform: translateX(-120vw);
 }
 
 .editorPanel{
@@ -79,8 +92,21 @@
         height: calc(94vh - 10vw);
     }
 
+    .editSubject{
+        transform: translateX(0vw);
+    }
+    
+    .editTime{
+        transform: translateX(-100vw);
+    }
+    
+    .editTimetable{
+        transform: translateX(-200vw);
+    }
+
     .editorPanel{
-        width: 99vw;
+        width: 96vw;
         height: calc(94vh - 12vw);
+        margin: 2vw;
     }
 }
