@@ -1,6 +1,6 @@
 const editSubjectBtnId = "editSubjectBtn";
 const editTimeBtnId = "editTimeBtn";
-const editTimeTableId = "editTimetableBtn";
+const editTimeTableBtnId = "editTimetableBtn";
 
 const editSubjectId = "subjectEditor";
 const editTimeId = "timeEditor";
@@ -36,7 +36,7 @@ let editTimetableBtn;
         editor.classList.remove(editTimeTableClass);
     };
 
-    editTimeTableId = document.getElementById(editTimeTableId);
+    editTimeTableId = document.getElementById(editTimeTableBtnId);
     editTimetableBtn.onclick = function(){
         editor.classList.remove(editSubjectClass);
         editor.classList.remove(editTimeClass);
