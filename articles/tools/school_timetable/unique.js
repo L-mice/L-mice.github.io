@@ -21,6 +21,9 @@ let dateDisplay;
     };
     dateDisplay = document.getElementById("dateDisplay");
     dateDisplay.innerText = date.toDateString();
+    dateDisplay.onclick = function(){
+        date = new Date();
+    };
 
     //config button
     let confBtn = document.createElement("div");
