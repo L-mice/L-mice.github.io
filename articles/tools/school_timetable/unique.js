@@ -43,7 +43,7 @@ let dateDisplay;
 function timetableDataSetup(){
     subjects = getSubjectList();
     timetable = getTimetable();
-    classtime = getClassTime(); 
+    classtime = getClassTime();
 }
 
 function timetableDataSave(){

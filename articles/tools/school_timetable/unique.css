@@ -10,7 +10,6 @@
 
 .bar{
     width: calc(60vw - 10vh);
-    height: 10vh;
     margin: auto;
     display: flex;
 }

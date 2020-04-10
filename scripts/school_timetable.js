@@ -81,3 +81,10 @@ function getClassTime(){
 function setClassTime(classtimelist){
     localStorage.setItem(classtime_list_name, JSON.stringify(classtimelist));
 }
+
+
+function resetData(){
+    localStorage.removeItem(subject_list_name);
+    localStorage.removeItem(timetable_name);
+    localStorage.removeItem(classtime_list_name);
+}
