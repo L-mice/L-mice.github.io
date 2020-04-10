@@ -5,7 +5,11 @@ let classtime;
 
 let tableitems = [];
 
+let date;
+
 (function(){
+    date = new Date();
+
     //config button
     let confBtn = document.createElement("div");
     confBtn.classList.add("floatBtn");
@@ -25,30 +29,29 @@ let tableitems = [];
 })();
 
 function timetableDataSetup(){
-    subjects = JSON.parse(localStorage.getItem(subject_list_name)) || [];
-    timetable = JSON.parse(localStorage.getItem(timetable_name)) || [[],[],[],[],[],[],[]];
-    classtime = JSON.parse(localStorage.getItem(classtime_list_name)) || [];    
+    subjects = getSubjectList();
+    timetable = getTimetable();
+    classtime = getClassTime(); 
 }
 
 function timetableDataSave(){
-    localStorage.setItem(subject_list_name, JSON.stringify(subjects));
-    localStorage.setItem(timetable_name, JSON.stringify(timetable));
-    localStorage.setItem(classtime_list_name, JSON.stringify(classtime));
+    setSubjectList(subjects);
+    setTimeTable(timetable);
+    setClassTime(classtime);
 }
 
 function timetableBuild(){
-    let date = new Date();
     let day = date.getDay();
 
     let classes = timetable[day] || [];
 
     let table = document.getElementById("table");
-    for(let k = 0; k < classes.length; k++){
+    for(let k = 0; k < classtime.length; k++){
         let subject = subjects[classes[k]];
         let item = createTableItem(subject, k);
-        item.classList.add("nextday");
+        item.classList.add("previousday");
         setTimeout(function(){
-            item.classList.remove("nextday");
+            item.classList.remove("previousday");
         }, 300*(k+1));
 
         tableitems.push(item);
