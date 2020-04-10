@@ -63,9 +63,11 @@ function timetableBuild(next){
     let listItem = table.children;
 
     for(let k = 0; k < listItem.length; k++){
-        listItem[k].classList.add(bbbb);
+        let item = listItem[k];
+        
+        item.classList.add(bbbb);
         setTimeout(function(){
-            listItem[k].remove();
+            item.remove();
         }, 500);
     }
 
@@ -80,7 +82,7 @@ function timetableBuild(next){
 
         table.appendChild(item);
         }
-    }, 500*listItem.length);
+    }, 600);
 }
 
 function toNextday(){
