@@ -13,6 +13,8 @@ const editTimeTableClass = "editTimeTable";
 
 const editorId = "editor";
 
+const selectedId = "selected";
+
 let backBtn;
 let editor;
 let editSubjectBtn;
@@ -33,6 +35,10 @@ let editTimetableBtn;
         editor.classList.add(editSubjectClass);
         editor.classList.remove(editTimeClass);
         editor.classList.remove(editTimeTableClass);
+
+        editSubjectBtn.classList.add(selectedId);
+        editTimeBtn.classList.remove(selectedId);
+        editTimeTableBtn.classList.remove(selectedId);
     };
 
     editTimeBtn = document.getElementById(editTimeBtnId);
@@ -40,6 +46,10 @@ let editTimetableBtn;
         editor.classList.remove(editSubjectClass);
         editor.classList.add(editTimeClass);
         editor.classList.remove(editTimeTableClass);
+
+        editSubjectBtn.classList.remove(selectedId);
+        editTimeBtn.classList.add(selectedId);
+        editTimeTableBtn.classList.remove(selectedId);
     };
 
     editTimeTableBtn = document.getElementById(editTimeTableBtnId);
@@ -47,5 +57,9 @@ let editTimetableBtn;
         editor.classList.remove(editSubjectClass);
         editor.classList.remove(editTimeClass);
         editor.classList.add(editTimeTableClass);
+
+        editSubjectBtn.classList.remove(selectedId);
+        editTimeBtn.classList.remove(selectedId);
+        editTimeTableBtn.classList.add(selectedId);
     };
 })();
