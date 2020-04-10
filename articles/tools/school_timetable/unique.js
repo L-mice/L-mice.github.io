@@ -11,22 +11,7 @@ let dateDisplay;
 (function(){
     date = new Date();
 
-    pBtn = document.getElementById("previousBtn");
-    pBtn.onclick = function(){
-        toPreviousday();
-    };
-    nBtn = document.getElementById("nextBtn");
-    nBtn.onclick = function(){
-        toNextday();
-    };
-    dateDisplay = document.getElementById("dateDisplay");
-    dateDisplay.innerText = date.toDateString();
-    dateDisplay.onclick = function(){
-        let newdate = new Date();
-        let next = 0 < (date - (newdate));
-        date = newdate;
-        timetableBuild(next);
-    };
+    setupBar();
 
     //config button
     let confBtn = document.createElement("div");
@@ -59,6 +44,9 @@ function timetableDataSave(){
 }
 
 function timetableBuild(next){
+    pBtn.onclick = null;
+    nBtn.onclick = null;
+
     let day = date.getDay();
     let classes = timetable[day] || [];
 
@@ -89,6 +77,8 @@ function timetableBuild(next){
         table.appendChild(item);
         }
     }, 600);
+
+    setupBar();
 }
 
 function toNextday(){
@@ -120,4 +110,26 @@ function createTableItem(subject, time){
     back.appendChild(inside);
 
     return back;
+}
+
+
+function setupBar(){
+    pBtn = document.getElementById("previousBtn");
+    pBtn.onclick = function(){
+        toPreviousday();
+    };
+
+    nBtn = document.getElementById("nextBtn");
+    nBtn.onclick = function(){
+        toNextday();
+    };
+
+    dateDisplay = document.getElementById("dateDisplay");
+    dateDisplay.innerText = date.toDateString();
+    dateDisplay.onclick = function(){
+        let newdate = new Date();
+        let next = 0 < (date - (newdate));
+        date = newdate;
+        timetableBuild(next);
+    };
 }
