@@ -42,10 +42,6 @@
     border-right: 0.5px solid #000000;
 }
 
-.selected{
-    color: #FF5BBD;
-}
-
 .barBtnLabel{
     margin: auto;
     color: #FFFFFF;
@@ -53,6 +49,10 @@
 
 .barBtnLabel:hover{
     color: #BBBBBB;
+}
+
+.selected{
+    color: #FF5BBD;
 }
 
 .editor{
