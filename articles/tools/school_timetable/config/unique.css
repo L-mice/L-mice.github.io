@@ -78,4 +78,9 @@
         width: 300vw;
         height: calc(94vh - 10vw);
     }
+
+    .editorPanel{
+        width: 99vw;
+        height: calc(94vh - 12vw);
+    }
 }
