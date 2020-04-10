@@ -9,7 +9,7 @@
     border-radius: 2vw;
     background: #888888;
     display: flex;
-    margin: 8px 10vw 8px 2vw;
+    margin: 8px 2vw;
 }
 
 .backBtnLabel{
@@ -19,11 +19,11 @@
 
 
 .editorBar{
-    width: 32vw;
+    width: 48vw;
     height: 4vw;
     border-radius: 2vw;
     background: #888888;
-    margin: 8px 10vw 8px 2vw;
+    margin: 8px 2vw;
     display: flex;
     padding: 0;
 }
