@@ -12,6 +12,8 @@
     width: calc(60vw - 10vh);
     margin: auto;
     display: flex;
+    user-select: none;
+    color: #FFFFFF;
 }
 
 .barBtn{

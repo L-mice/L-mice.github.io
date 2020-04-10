@@ -22,7 +22,10 @@ let dateDisplay;
     dateDisplay = document.getElementById("dateDisplay");
     dateDisplay.innerText = date.toDateString();
     dateDisplay.onclick = function(){
-        date = new Date();
+        let newdate = new Date();
+        let next = 0 <= (date - (newdate));
+        date = newdate;
+        timetableBuild(next);
     };
 
     //config button
