@@ -1,6 +1,6 @@
 .dateBar{
     width: 60vw;
-    height: 10vh;
+    height: 5vh;
     background: #666666;
     margin: 8px auto;
     display: flex;
@@ -9,7 +9,7 @@
 }
 
 .bar{
-    width: calc(60vw - 10vh);
+    width: calc(60vw - 5vh);
     margin: auto;
     display: flex;
     user-select: none;
@@ -17,7 +17,7 @@
 }
 
 .barBtn{
-    width: 10vh;
+    width: 5vh;
     text-align: center;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .barTitle{
-    width: calc(60vw - 30vh);
+    width: calc(60vw - 15vh);
     text-align: center;
 }
 
@@ -87,15 +87,14 @@
 @media only screen and (max-width: 600px){
     .dateBar{
         width: 90vw;
-        height: 5vh;
     }
 
     .bar{
-        width: calc(90vw - 10vh);
+        width: calc(90vw - 5vh);
     }
 
     .barTitle{
-        width: calc(90vw - 30vh);
+        width: calc(90vw - 15vh);
     }
 
     .timetable{
