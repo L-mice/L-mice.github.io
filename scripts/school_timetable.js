@@ -53,6 +53,8 @@ function addSubject(subject){
     let index = subjects.indexOf(subject); 
     if(index == -1) subjects.push(subject);
 
+    setSubjectList(subjects);
+
     return index;
 }
 

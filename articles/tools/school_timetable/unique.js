@@ -128,7 +128,7 @@ function setupBar(){
     dateDisplay.innerText = date.toDateString();
     dateDisplay.onclick = function(){
         let newdate = new Date();
-        let next = -1000*60*60*24 <= (date - (newdate));
+        let next = -1000*60*60*24 < (date - (newdate));
         date = newdate;
         timetableBuild(!next);
     };
