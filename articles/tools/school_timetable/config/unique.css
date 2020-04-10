@@ -31,10 +31,7 @@
 .barBtn{
     width: calc(48vw / 3);
     margin: auto;
-}
-
-.barBtn:hover{
-    background: #666666;
+    user-select: none;
 }
 
 #editTimeBtn{
@@ -45,6 +42,10 @@
 .barBtnLabel{
     margin: auto;
     color: #FFFFFF;
+}
+
+.barBtnLabel:hover{
+    color: #BBBBBB;
 }
 
 .editor{
