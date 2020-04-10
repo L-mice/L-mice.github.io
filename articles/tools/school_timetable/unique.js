@@ -66,10 +66,11 @@ function timetableBuild(next){
         listItem[k].classList.add(bbbb);
         setTimeout(function(){
             listItem[k].remove();
-        }, 600);
+        }, 500);
     }
 
-    for(let k = 0; k < classes.length; k++){
+    setTimeout(function(){
+        for(let k = 0; k < classes.length; k++){
         let subject = subjects[classes[k]];
         let item = createTableItem(subject, k);
         item.classList.add(aaaa);
@@ -78,7 +79,8 @@ function timetableBuild(next){
         }, 300*(k+1));
 
         table.appendChild(item);
-    }
+        }
+    }, 500*listItem.length);
 }
 
 function toNextday(){
