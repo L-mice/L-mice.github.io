@@ -75,10 +75,10 @@ function timetableBuild(next){
         }, 300*(k+1));
 
         table.appendChild(item);
+
+        setupBar();
         }
     }, 600);
-
-    setupBar();
 }
 
 function toNextday(){
