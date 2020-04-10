@@ -82,13 +82,13 @@ function timetableBuild(next){
 }
 
 function toNextday(){
-    date.setDate(date.getDate()++);
+    date.setDate(date.getDate()+1);
     dateDisplay.innerText = date.toString();
     timetableBuild(true);
 }
 
 function toPreviousday(){
-    date.setDate(date.getDate()--);
+    date.setDate(date.getDate()-1);
     dateDisplay.innerText = date.toString();
     timetableBuild(false);
 }
