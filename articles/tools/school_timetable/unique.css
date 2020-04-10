@@ -94,6 +94,7 @@
 
     .barTitle{
         width: calc(90vw - 30vh);
+    }
 
     .timetable{
         width: 100vw;
