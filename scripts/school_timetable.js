@@ -3,7 +3,9 @@ const subject_list_name = "Class Subjects";
     [
         {
             name: "subject name",
-            colour: "colour for this subject"
+            colour: "colour for this subject",  //can be omitted
+            classroom: "classroom", //can be omitted
+            teacher: "teacher"      //can be omitted
         }
     ]
 */
