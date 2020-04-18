@@ -2,6 +2,7 @@
     width: 48vw;
     height: 12vw;
     display: flex;
+    margin: auto;
 }
 
 .youtubeIcon{
