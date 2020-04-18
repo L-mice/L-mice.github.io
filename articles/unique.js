@@ -2,26 +2,32 @@ const articleList = [
     {
         title: "愛用のイヤホンが安くなった。",
         dir: "sale_0",
+	    own_thumbnail: false,
     },
     {
         title: "Members",
         dir: "members",
+	    own_thumbnail: false,
     },
     {
         title: "Articles",
         dir: "/articles",
+	    own_thumbnail: false,
     },
     {
         title: "Tools",
         dir: "tools",
+	    own_thumbnail: false,
     },
     {
         title: "About",
         dir: "about",
+	    own_thumbnail: false,
     },
     {
         title: "Top",
         dir: "/",
+	    own_thumbnail: false,
     },
 ];
 
@@ -35,11 +41,17 @@ const articleList = [
 
 (function(){
     for(let k = 0, base = document.getElementsByClassName("contents")[0]; k < articleList.length; k++){
-        base.appendChild(makeItem(articleList[k].title, articleList[k].dir));
+        base.appendChild(
+            makeItem(
+                articleList[k].title,
+                articleList[k].dir,
+                articleList[k].own_thumbnail ? `${articleList[k].dir}/thumbnail.png` : "/images/neko_thumbnail.png"
+            )
+        );
     }
 })();
 
-function makeItem(text, dir){
+function makeItem(text, dir, thumbnail){
     let itemBack = document.createElement("div");
     itemBack.classList.add("item_back");
     itemBack.onclick = function(){
@@ -47,7 +59,7 @@ function makeItem(text, dir){
     };
 
     let thumb = document.createElement("img");
-    thumb.src = "/images/neko_thumbnail.png";
+    thumb.src = thumbnail;
     thumb.classList.add("itemThumbnail");
 
     let title = document.createElement("p");

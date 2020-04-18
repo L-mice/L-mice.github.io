@@ -1,0 +1,13 @@
+.youtubeLink{
+    width: 48vw;
+    height: 12vw;
+    
+}
+
+
+@media only screen and (max-width: 600px){
+    .youtubeLink{
+        width: 80vw;
+        height: 20vw;
+    }
+}
