@@ -1,5 +1,5 @@
 .item_back{
-    width: calc(60vw * 0.9);
+    width: 54vw;
     height: 8vh;
     margin: 4px auto;
     display:flex;
@@ -13,20 +13,29 @@
 }
 
 .itemThumbnail{
-    height: 6vh;
-    margin: 1vh;
+    width: 6.75vw;
+    margin: auto;
 }
 
 .itemTitle{
-    height: auto;
-    margin: auto 0;
-    font-size: calc(10px + 1vh);
+    width: 47.25vw;
+    margin: auto;
+    font-size: 1.5vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #000000;
 }
 
 @media only screen and (max-width: 600px){
     .item_back{
-        width: calc(100vw * 0.9);
+        width: 90vw;
+    }
+
+    .itemThumbnail{
+        width: 11.25vw;
+    }
+
+    .itemTitle{
+        width: 78.75vw;
+        font-size: 2.5vw;s
     }
 }
