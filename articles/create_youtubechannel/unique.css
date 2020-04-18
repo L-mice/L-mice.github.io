@@ -1,7 +1,17 @@
 .youtubeLink{
     width: 48vw;
     height: 12vw;
-    
+    display: flex;
+}
+
+.youtubeIcon{
+    width: 12vw;
+    margin: auto;
+}
+
+.youtubeLinkDescription{
+    width: 36vw;
+    margin: auto;
 }
 
 
@@ -9,5 +19,13 @@
     .youtubeLink{
         width: 80vw;
         height: 20vw;
+    }
+
+    .youtubeIcon{
+        width: 20vw;
+    }
+
+    .youtubeLinkDescription{
+        width: 60vw;
     }
 }
