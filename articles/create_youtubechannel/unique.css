@@ -3,6 +3,7 @@
     height: 12vw;
     display: flex;
     margin: auto;
+    user-select: none;
 }
 
 .youtubeIcon{
