@@ -1,3 +1,15 @@
+.articleTitle{
+    width: 58vw;
+    font-size: 3.75vw;
+}
+
+.sentence{
+    width: 54vw;
+    margin: auto;
+    text-align: left;
+    font-size: 1.8vw;
+}
+
 .youtubeLink{
     width: 48vw;
     height: 12vw;
@@ -13,11 +25,23 @@
 
 .youtubeLinkDescription{
     width: 36vw;
+    font-size: 1.5vw;
     margin: auto;
+    text-align: center;
 }
 
 
 @media only screen and (max-width: 600px){
+    .articleTitle{
+        width: 98vw;
+        font-size: 6vw;
+    }
+    
+    .sentence{
+        width: 90vw;
+        font-size: 3vw;
+    }
+
     .youtubeLink{
         width: 80vw;
         height: 20vw;
@@ -29,5 +53,6 @@
 
     .youtubeLinkDescription{
         width: 60vw;
+        font-size: 2.5vw;
     }
 }

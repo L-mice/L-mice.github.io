@@ -13,16 +13,18 @@
 }
 
 .itemThumbnail{
-    width: 6.75vw;
-    margin: auto;
+    width: 9vw;
+    max-height: 7vh;
+    margin: auto 2.25vw;
 }
 
 .itemTitle{
-    width: 47.25vw;
-    margin: auto;
-    font-size: 1.5vw;
+    width: 42vw;
+    margin: auto 2.25vw;
+    font-size: 2vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #000000;
+    text-align: left;
 }
 
 @media only screen and (max-width: 600px){
@@ -31,11 +33,13 @@
     }
 
     .itemThumbnail{
-        width: 11.25vw;
+        width: 15vw;
+        margin: auto 3.75vw;
     }
 
     .itemTitle{
-        width: 78.75vw;
-        font-size: 2.5vw;
+        width: 60vw;
+        margin: auto 3.75vw;
+        font-size: 3vw;
     }
 }
