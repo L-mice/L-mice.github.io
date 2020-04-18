@@ -19,6 +19,10 @@ span.contentItem{
     margin: 2px auto;
 }
 
+.productImage{
+    margin: auto;
+}
+
 div#ads{
     background: #FFFFFF44;
 }
