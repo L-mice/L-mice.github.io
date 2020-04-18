@@ -1,5 +1,10 @@
 const articleList = [
     {
+        title: "YouTubeチャンネルを開設しました",
+        dir: "create_youtubechannel",
+	    own_thumbnail: true,
+    },
+    {
         title: "愛用のイヤホンが安くなった。",
         dir: "sale_0",
 	    own_thumbnail: false,
