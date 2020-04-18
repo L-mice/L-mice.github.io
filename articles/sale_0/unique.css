@@ -10,17 +10,19 @@
     font-size: 1.8vw;
 }
 
-div#listOfContents{
+#listOfContents{
     width: 48vw;
+    display: block;
+    margin: 1vh auto;
 }
 
-span.contentItem{
+.contentItem{
     width: 44vw;
     margin: 2px auto;
 }
 
 .productImage{
-    margin: auto;
+    margin: 8px;
 }
 
 div#ads{
