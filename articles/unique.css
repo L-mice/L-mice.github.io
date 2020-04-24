@@ -1,3 +1,10 @@
+.pageTitle{
+    width: 60vw;
+    height: auto;
+    font-size: 3vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .item_back{
     width: calc(60vw - 2px);
     height: 6vw;
@@ -36,6 +43,11 @@
 }
 
 @media only screen and (max-width: 600px){
+    .pageTitle{
+        width: 100vw;
+        font-size: 5vw;
+    }
+    
     .item_back{
         width: 90vw;
         height: 9vw;
