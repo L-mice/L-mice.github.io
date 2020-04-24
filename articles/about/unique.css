@@ -1,7 +1,8 @@
 .title{
     width: 60vw;
     height: auto;
-    font-size: 5vw;
+    font-size: 3vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 8px 0;
 }
 
@@ -9,6 +10,7 @@
     width: 54vw;
     height: auto;
     font-size: 2vw;
+    font-family: 'Times New Roman', Times, serif;
     margin: auto;
 }
 
