@@ -11,3 +11,16 @@
     font-size: 2vw;
     margin: auto;
 }
+
+@media only screen and (max-width: 600px){
+    .title{
+        width: 100vw;
+        font-size: 8vw;
+        margin: 4px 0;
+    }
+
+    .sentence{
+        width: 96vw;
+        font-size: 3.5vw;
+    }
+}
