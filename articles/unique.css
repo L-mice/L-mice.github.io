@@ -18,6 +18,11 @@
     margin: auto 2.25vw;
 }
 
+.thumbImage{
+    width: auto;
+    height: auto;
+}
+
 .itemTitle{
     width: 42vw;
     margin: auto 2.25vw;

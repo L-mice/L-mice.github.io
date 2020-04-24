@@ -63,15 +63,20 @@ function makeItem(text, dir, thumbnail){
         location.href = dir;
     };
 
+    let thumbBack = document.createElement("div");
+    thumbBack.classList.add("itemThumbnail");
+
     let thumb = document.createElement("img");
     thumb.src = thumbnail;
-    thumb.classList.add("itemThumbnail");
+    thumb.classList.add("thumbImage");
+
+    thumbBack.appendChild(thumb);
 
     let title = document.createElement("p");
     title.innerHTML = text;
     title.classList.add("itemTitle");
 
-    itemBack.appendChild(thumb);
+    itemBack.appendChild(thumbBack);
     itemBack.appendChild(title);
 
     return itemBack;
