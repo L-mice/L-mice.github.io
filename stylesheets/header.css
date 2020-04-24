@@ -14,7 +14,7 @@ body{
     width: 14vw;
     height: 6vh;
     margin-left: 2vw;
-    font-size: 1.5vh;
+    font-size: 2vh;
     text-align: center;
     background: #FFFFFF00;
     color: #FFFFFF;
@@ -55,6 +55,6 @@ span.highlight{
 
 @media only screen and (max-width: 600px){
     .headerBtn{
-        font-size: 1.5vw;
+        font-size: 1.5vh;
     }
 }

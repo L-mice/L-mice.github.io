@@ -1,6 +1,6 @@
 .item_back{
-    width: 54vw;
-    height: 8vh;
+    width: calc(60vw - 2px);
+    height: 6vw;
     margin: 4px auto;
     display:flex;
     background: #00000000;
@@ -13,19 +13,22 @@
 }
 
 .itemThumbnail{
-    width: 9vw;
-    max-height: 7vh;
-    margin: auto 2.25vw;
+    width: 12vw;
+    height: 6vw;
+    display: flex;
 }
 
 .thumbImage{
     width: auto;
+    max-width: 10.8vw;
     height: auto;
+    max-height: 5.4vw;
+    margin: auto;
 }
 
 .itemTitle{
-    width: 42vw;
-    margin: auto 2.25vw;
+    width: 45vw;
+    margin: auto;
     font-size: 2vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #000000;
@@ -35,16 +38,22 @@
 @media only screen and (max-width: 600px){
     .item_back{
         width: 90vw;
+        height: 9vw;
     }
 
     .itemThumbnail{
-        width: 15vw;
-        margin: auto 3.75vw;
+        width: 18vw;
+        height: 9vw;
+    }
+
+    .thumbImage{
+        max-width: 16.2vw;
+        max-height: 8.1vw;
     }
 
     .itemTitle{
-        width: 60vw;
-        margin: auto 3.75vw;
+        width: 67.5vw;
+        margin: auto;
         font-size: 3vw;
     }
 }
