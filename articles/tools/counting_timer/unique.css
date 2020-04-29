@@ -1,0 +1,27 @@
+.test{
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    margin: 0;
+    display: flex;
+    background: #000000FF;
+    opacity: 0;
+    text-align: center;
+    transition: all 4000ms 300ms ease;
+}
+
+.activeBanner{
+    transform: translateY(88vh);
+    opacity: 1;
+}
+
+p{
+    width: auto;
+    height: auto;
+    margin: auto;
+    color: #FFFFFF;
+}
+
+.contents{
+    height: 1000vh;
+}
