@@ -40,13 +40,13 @@ body{
     height: var(--header-height);
     background: linear-gradient(to bottom,var(--quotergray), var(--white) 50%);
     transform: 0px 0px 8px gray;
+    user-select: all;
 }
 
 .header-background{
     width: calc(var(--device-width)/3);
     object-fit: contain;
     margin: auto;
-    user-select: none;
 }
 
 #base{

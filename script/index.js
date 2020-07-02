@@ -14,3 +14,9 @@ var shareBtn = document.getElementById("share");
 shareBtn.onclick = function(){
     share("", "", location.href);
 };
+
+var header = document.getElementById("headerbase");
+header.onclick = function(){
+    go("https://L-mice.github.io");
+    console.log("header clicked");
+};
