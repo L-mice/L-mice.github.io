@@ -1,0 +1,22 @@
+:root{
+    --header-height: 25vh;
+    --base-width: 80vw;
+
+    --main-content-width: 58vw;
+    --sub-content-width: 20vw;
+    --ad-position: static;
+
+    --sharebtn-width: calc(var(--main-content-width)/3 - 4px);
+}
+
+.sub-content{
+    min-height: var(--base-min-height);
+}
+
+.ad{
+    position: var(--ad-position);
+}
+
+#share{
+    display: none;
+}

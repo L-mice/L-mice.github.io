@@ -1,0 +1,7 @@
+:root{
+    --header-height: 25vw;
+    --base-width: var(--device-width);
+
+    --main-content-width: var(--device-width);
+    --sub-content-width: var(--device-width);
+}

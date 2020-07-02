@@ -1,0 +1,124 @@
+:root{
+    --white: #FFFFFF;
+    --quotergray: #bbbbbb;
+    --halfgray: #888888;
+    --black: #000000;
+    
+    --fb-color: #1877F2;
+    --tw-color: #1DA1F2;
+    --line-color: #00B900;
+    --share-color: orangered;
+
+    --bg: var(--white);
+
+    --device-width: 100vw;
+    --device-height: 100vh;
+
+    --base-min-height: calc((var(--device-height) - var(--header-height))*5);
+
+    --sharebtn-width: calc(var(--main-content-width)/4 - 4px);
+    --sharebtn-height: calc(var(--sharebtn-width)/4);
+}
+
+* div{
+    max-width: var(--device-width);
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+body{
+    background: var(--bg);
+    margin: 0;
+    max-width: var(--device-width);
+}
+
+#headerbase{
+    width: var(--device-width);
+    height: var(--header-height);
+    background: linear-gradient(to bottom,var(--quotergray), var(--white) 50%);
+    transform: 0px 0px 8px gray;
+}
+
+.header-background{
+    width: calc(var(--device-width)/3);
+    object-fit: contain;
+    margin: auto;
+    user-select: none;
+}
+
+#base{
+    width: var(--base-width);
+    min-height: var(--base-min-height);
+    margin: auto;
+    background: var(--bg);
+}
+
+.main-content{
+    width: var(--main-content-width);
+    max-width: var(--main-content-width);
+    min-height: var(--base-min-height);
+}
+
+.sharebtn{
+    width: var(--sharebtn-width);
+    height: var(--sharebtn-height);
+    user-select: none;
+    border-radius: calc(var(--sharebtn-height)/8);
+    border: 0;
+    margin-top: calc(var(--sharebtn-height)/4);
+    margin-bottom: calc(var(--sharebtn-height)/4);
+    box-shadow: 0px 0px 8px gray;
+}
+
+.sharebtn:hover{
+    transform: scale(1.02, 1.02);
+}
+
+.shareicon{
+    height: calc(var(--sharebtn-height) * 0.8);
+    margin: calc(var(--sharebtn-height) * 0.1);
+}
+
+.sharelabel{
+    color: var(--white);
+    font-size: calc(var(--sharebtn-width)/7);
+    font-weight: bolder;
+    margin: auto;
+}
+
+#twshare{
+    background: var(--tw-color);
+}
+
+#fbshare{
+    background: var(--fb-color);
+}
+
+#lineshare{
+    background: var(--line-color);
+}
+
+#share{
+    background: var(--share-color);
+}
+
+.sub-content{
+    width: var(--sub-content-width);
+    background: var(--bg);
+}
+
+.ad{
+    max-width: calc(var(--sub-content-width) - 8px);
+    height: fit-content;
+    border-width: 4px;
+    border-style: double;
+}
+
+.ad-title{
+    width: var(--sub-content-width);
+    height: calc(var(--sub-content-width)/12);
+    font-size: calc(var(--sub-content-width)/12);
+}
