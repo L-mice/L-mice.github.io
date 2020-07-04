@@ -1,22 +1,40 @@
-var twshareBtn = document.getElementById("twshare");
-twshareBtn.onclick = function(){
-    shareOnTwitter("", location.href);
-};
-var fbshareBtn = document.getElementById("fbshare");
-fbshareBtn.onclick = function(){
-    shareUrlOnFacebook(location.href);
-};
-var lineshareBtn= document.getElementById("lineshare");
-lineshareBtn.onclick = function(){
-    shareUrlOnLINE(location.href);
-};
-var shareBtn = document.getElementById("share");
-shareBtn.onclick = function(){
-    share("", "", location.href);
-};
+function onClick(event){
+    let target = event.target;  //Clicked Element
+    let classes = target.className.split(" ");
+    let id = target.id;
+    let tag = target.tagName.toLowerCase();
 
-var header = document.getElementById("headerbase");
-header.onclick = function(){
-    go("https://L-mice.github.io");
-    console.log("header clicked");
-};
+    let hasClass = function(classname){
+        return classes.indexOf(classname) != -1;
+    };
+
+    switch(id){
+        case "headerbase":
+            go("/index.html")
+            break;
+    }
+    
+    if(hasClass("sharebtn")){
+        switch(true){
+            case hasClass("twshare"):
+                shareOnTwitter("", location.href);
+                break;
+
+            case hasClass("fbshare"):
+                shareUrlOnFacebook(location.href);
+                break;
+
+            case hasClass("lineshare"):
+                shareUrlOnLINE(location.href);
+                break;
+
+            case hasClass("sharestandard"):
+                share("", "", location.href);
+                break;
+        }
+    }
+
+    console.log(tag, classes, id);
+}
+
+document.addEventListener("click", onClick);

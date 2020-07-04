@@ -17,6 +17,10 @@
     position: var(--ad-position);
 }
 
-#share{
+#mobileshare{
     display: none;
+}
+
+#desktopshare{
+    display: flex;
 }
