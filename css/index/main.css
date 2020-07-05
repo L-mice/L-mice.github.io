@@ -120,6 +120,30 @@ body{
                 margin-bottom: calc(var(--sharebtn-height)/4);
             }
 
+            .article-title{
+                width: fit-content;
+                height: fit-content;
+                
+                padding: 4px;
+
+                font-size: calc(var(--main-content-width)/20);
+                font-weight: bold;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: var(--white);
+                
+                border-style: double;
+                border-width: 8px;
+                border-color: var(--white);
+                border-left: none;
+
+                background: red;
+            }
+
+        .sub-content{
+            width: var(--sub-content-width);
+            background: var(--bg);
+        }
+
             #desktopshare{
                 height: calc((var(--sharebtn-height) + 4px)*3);
                 margin: auto;
@@ -127,11 +151,6 @@ body{
                 margin-bottom: 4px;
                 display: none;
             }
-
-        .sub-content{
-            width: var(--sub-content-width);
-            background: var(--bg);
-        }
 
             .ad{
                 max-width: calc(var(--sub-content-width) - 8px);
