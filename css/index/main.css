@@ -139,6 +139,20 @@ body{
                 background: red;
             }
 
+            .article{
+                width: var(--main-content-width);
+                display: block;
+            }
+
+            .article-img{
+                max-width: calc(var(--main-content-width) * 0.5 - 2px);
+                max-height: calc(var(--device-height) * 0.5 - 2px);
+                border-width: 1px;
+                border-style: solid;
+                border-color: var(--black);
+                margin: auto;
+            }
+
         .sub-content{
             width: var(--sub-content-width);
             background: var(--bg);
