@@ -4,9 +4,8 @@
 
     --main-content-width: 58vw;
     --sub-content-width: 20vw;
-    --ad-position: static;
 
-    --sharebtn-width: calc(var(--main-content-width)/3 - 4px);
+    --sharebtn-width: calc(var(--sub-content-width) * 0.75);
 }
 
 .sub-content{

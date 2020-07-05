@@ -25,6 +25,10 @@
     user-select: none;
 }
 
+* iframe{
+    pointer-events: auto;
+}
+
 * div{
     max-width: var(--device-width);
     display: flex;
@@ -118,8 +122,9 @@ body{
 
             #desktopshare{
                 height: calc((var(--sharebtn-height) + 4px)*3);
-                margin-left: auto;
-                margin-right: auto;
+                margin: auto;
+                margin-top: 4px;
+                margin-bottom: 4px;
                 display: none;
             }
 
@@ -130,13 +135,17 @@ body{
 
             .ad{
                 max-width: calc(var(--sub-content-width) - 8px);
-                height: fit-content;
+                max-height: calc(var(--sub-content-width) * (5/36) + 240px);
                 border-width: 4px;
                 border-style: double;
+                margin: auto;
+                overflow: hidden;
             }
 
                 .ad-title{
                     width: var(--sub-content-width);
                     height: calc(var(--sub-content-width)/12);
                     font-size: calc(var(--sub-content-width)/12);
+                    margin-top: calc(var(--sub-content-width)/36);
+                    margin-bottom: calc(var(--sub-content-width)/36);
                 }
