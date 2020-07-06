@@ -135,19 +135,18 @@ body{
             }
 
             .article-title{
-                padding: 4px 16px;
+                width: calc(var(--main-content-width) - 64px);
 
                 font-size: calc(var(--main-content-width)/15);
                 font-weight: bold;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 color: orangered;
+                text-align: left;
 
-                border-style: solid;
-                border-width: 12px;
-                border-color: orangered;
-                border-bottom: none;
-                border-top: none;
+                border-bottom: 4px solid orangered;
+                box-shadow: 0px 4px 8px var(--quotergray);
 
+                padding: 4px 16px;
                 margin: auto;
             }
 
@@ -159,14 +158,13 @@ body{
 
                 font-size: calc(var(--main-content-width) * 0.02);
 
-                background: whitesmoke;
-
-                margin-top: 16px;
-                margin-bottom: 16px;
+                margin: 16px auto;
             }
 
             .article-anchor{
                 margin: auto;
+                font-size: calc(var(--article-font-size) * 1.5);
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
 
             .article-index{
@@ -177,7 +175,8 @@ body{
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 color: orangered;
                 
-                border-left: 12px solid orangered;
+                border-left: 8px solid orangered;
+                box-shadow: 4px 0px 8px gray;
 
                 background: var(--white);
             }
