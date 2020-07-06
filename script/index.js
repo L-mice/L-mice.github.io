@@ -12,6 +12,13 @@ function onClick(event){
         case "headerbase":
             go("/index.html")
             break;
+
+        case "full-img-back":
+            target.classList.add("fade-out");
+            setTimeout(function(){
+                target.remove();
+            }, 3000);
+            break;
     }
     
     switch(true){
@@ -34,19 +41,12 @@ function onClick(event){
                 break;
         }
         break;
+
+        case hasClass("article-img"):
+            showImageAsFull(target.src);
+            break;
     }
 
     console.log(tag, classes, id);
 }
 document.addEventListener("click", onClick);
-
-function bookmark(){
-    if (window.sidebar) { // Mozilla Firefox Bookmark
-        window.sidebar.addPanel(location.href,document.title,"");
-      } else if(window.external) { // IE Favorite
-        window.external.AddFavorite(location.href,document.title); }
-      else if(window.opera && window.print) { // Opera Hotlist
-        this.title=document.title;
-        return true;
-      }
-}

@@ -19,3 +19,18 @@ async function share(title, text, url){
         });
     }
 }
+
+function showImageAsFull(dir){
+    let back = document.createElement("div");
+    back.id = "full-img-back";
+    back.classList.add("full-img-back");
+    back.classList.add("fade-in");
+
+
+    let img = document.createElement("img");
+    img.classList.add("full-img");
+    img.src = dir;
+
+    back.insertAdjacentElement("beforeend", img);
+    document.body.insertAdjacentElement("afterbegin", back);
+}
