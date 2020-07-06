@@ -4,4 +4,6 @@
 
     --main-content-width: var(--device-width);
     --sub-content-width: var(--device-width);
+
+    --article-font-size: calc(var(--main-content-width)/30);
 }

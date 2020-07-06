@@ -6,6 +6,8 @@
     --sub-content-width: 20vw;
 
     --sharebtn-width: calc(var(--sub-content-width) * 0.75);
+
+    --article-font-size: calc(var(--main-content-width)/50);
 }
 
 .sub-content{

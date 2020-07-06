@@ -187,7 +187,7 @@ body{
                 text-align: left;
                 
                 font-family: 'Times New Roman', Times, serif;
-                font-size: calc(var(--main-content-width)/50);
+                font-size: var(--article-font-size);
 
                 margin: 2px;
             }

@@ -4,4 +4,6 @@
 
     --main-content-width: 90vw;
     --sub-content-width: 100vw;
+
+    --article-font-size: calc(var(--main-content-width)/40);
 }
