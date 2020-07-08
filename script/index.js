@@ -17,7 +17,7 @@ function onClick(event){
             target.classList.add("fade-out");
             setTimeout(function(){
                 target.remove();
-            }, 3000);
+            }, 300);
             break;
     }
     

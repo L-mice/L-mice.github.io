@@ -70,11 +70,11 @@ body{
     }
     
     .fade-in{
-        animation: fadeIn ease 3s;
+        animation: fadeIn ease-in 0.3s;
     }
 
     .fade-out{
-        animation: fadeOut ease 3s;
+        animation: fadeOut ease-out 0.3s;
     }
 
     @keyframes fadeIn{
